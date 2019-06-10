@@ -12,4 +12,11 @@
 */
 
 Route::get('/home1','HomeController@index');
+
+// template2
 Route::get('/','Home1Controller@index');
+Route::get('/promo','PromoController@index');
+Route::get('/galpubg','GalleryController@galpubg');
+Route::get('/galapex','GalleryController@galapex');
+Route::get('/newslist','NewsListController@index');
+Route::get('/news','NewsListController@news');

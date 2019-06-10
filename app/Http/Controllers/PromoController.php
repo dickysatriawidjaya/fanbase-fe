@@ -1,10 +1,10 @@
 <?php
   namespace App\Http\Controllers;
   use View;
-  class Home1Controller extends Controller{
+  class PromoController extends Controller{
     public function index()
     {
-      return View::make('/home1/home')->render();
+      return View::make('/home1/promo')->render();
     }
   }
  ?>
