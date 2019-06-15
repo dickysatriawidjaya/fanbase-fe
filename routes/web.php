@@ -12,7 +12,8 @@
 */
 // template1
 Route::get('/template1','Template1Controller@index');
-Route::get('/template1/about','Template1Controller@about');
+Route::get('/template1/news','Template1Controller@news');
+Route::get('/template1/newsdetail','Template1Controller@newsdetail');
 Route::get('/template1/live','Template1Controller@live');
 Route::get('/template1/media','Template1Controller@media');
 Route::get('/template1/music','Template1Controller@music');

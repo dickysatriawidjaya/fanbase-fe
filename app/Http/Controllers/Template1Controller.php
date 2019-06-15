@@ -6,9 +6,13 @@
     {
       return View::make('/template1/home')->render();
     }
-    public function about()
+    public function news()
     {
-      return View::make('/template1/about')->render();
+      return View::make('/template1/news')->render();
+    }
+    public function newsdetail()
+    {
+      return View::make('/template1/newsdetail')->render();
     }
     public function live()
     {

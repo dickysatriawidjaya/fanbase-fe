@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<title>88.0 - Radio Station Template</title>
+	<title>Noah Band FanBase</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="88.0 radio station template">
 	<meta name="keywords" content="radio, station, creative, html">
@@ -14,6 +14,7 @@
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="{{mix('/css/app.css')}}">
+	<link href="{{ asset('assets3/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css"/>
 
 
 	<!--[if lt IE 9]>
@@ -41,15 +42,15 @@
 			</div>
 			<!-- Main Menu -->
 			<ul class="main-menu">
-				<li class="active"><a href="/template1">Home</a></li>
-				<li><a href="/template1/about">News</a></li>
+				<li class=""><a href="/template1">Home</a></li>
+				<li><a href="/template1/news">News</a></li>
 				<li><a href="/template1/live">Live</a></li>
 				<li><a href="/template1/media">Media</a></li>
 				<li><a href="/template1/music">Music</a></li>
 				<li><a href="/template1/movie">Movie</a></li>
-        <li><a href="/template1/movie">Store</a></li>
-        <li><a href="/template1/movie">Lovers</a></li>
-        <li><a href="/template1/movie">Profile</a></li>
+        <li><a href="/template1/store">Store</a></li>
+        <li><a href="/template1/lovers">Lovers</a></li>
+        <li><a class="login" id="myBtn">Profile</a></li>
         <li><a href="/template1/link">Link</a></li>
 			</ul>
 			<!-- Social Links -->
@@ -71,7 +72,7 @@
 	<footer class="footer-section">
 		<div class="contaoner">
 			<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | FanBaseSite is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">YSA Support & Service</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 		</div>
 	</footer>
@@ -90,7 +91,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="{{ asset('assets3/js/wavesurfer.min.js') }}"></script>
 	<script src="{{ asset('assets3/js/audio.js') }}"></script>
 
-
+	<script src="{{ asset('assets3/js/costum/template1.js') }}"></script>
 
 
     </body>
