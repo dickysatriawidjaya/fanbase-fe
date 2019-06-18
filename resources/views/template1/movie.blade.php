@@ -5,7 +5,7 @@
 <section class="page-info-section set-bg" data-setbg="{{ asset('assets3/img/page-info-bg.jpg') }}">
 	<div class="container">
 		<div class="section-title text-center">
-			<h2>Our Albums</h2>
+			<h2>Our Movie</h2>
 		</div>
 	</div>
 </section>
@@ -20,7 +20,7 @@
 				<div class="blog-item">
 					<div class="blog-image">
 						<img src="{{ asset('assets3/img/blog/albam.jpg') }}" alt="#">
-						<a class="tag">#music</a>
+						<a class="tag">#movie</a>
 					</div>
 					<div class="blog-content">
 						<div class="date">14 AUG 2018</div>
@@ -28,17 +28,42 @@
 						<p>Sings Legends merupakan album studio karya Noah.
               Album ini merupakan album ketiga mereka yang dirilis untuk memperkenalkan kembali lagu-lagu terbaik dari musisi era tahun 1960an hingga tahun 1990an.
               </p>
-						<button class="site-btn" id="myBtn">Download</button>
+						<button class="site-btn btn_login" >Download</button>
             <!-- Trigger/Open The Modal -->
             <!-- The Modal -->
-            <div id="myModal" class="modal">
-
+            <div  class="modal modal_login">
               <!-- Modal content -->
               <div class="modal-content">
-                <span class="close">&times;</span>
+                <span class="btn_close">&times;</span>
                 <p>Please Login</p>
+								<button type="button" class="site-btn" name="button">Login</button>
               </div>
-
+            </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="blog-item">
+					<div class="blog-image">
+						<img src="{{ asset('assets3/img/blog/movie noah.jpg') }}" alt="#">
+						<a class="tag">#movie</a>
+					</div>
+					<div class="blog-content">
+						<div class="date">17 AUG 2019</div>
+						<h4>Know As Peterpan</h4>
+						<p>Know As Peterpan merupakan album studio karya Noah.
+              Album ini merupakan album ketiga mereka yang dirilis untuk memperkenalkan kembali lagu-lagu terbaik dari musisi era tahun 1960an hingga tahun 1990an.
+              </p>
+						<button class="site-btn btn_login" >Download</button>
+            <!-- Trigger/Open The Modal -->
+            <!-- The Modal -->
+            <div  class="modal modal_login">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="btn_close">&times;</span>
+                <p>Please Login</p>
+								<button type="button" class="site-btn" name="button">Login</button>
+              </div>
             </div>
 					</div>
 				</div>
@@ -130,33 +155,6 @@
 	</div>
 </section>
 <!-- Footer Top section end -->
-<script type="text/javascript">
-// Get the modal
-var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-</script>
 
 @endsection

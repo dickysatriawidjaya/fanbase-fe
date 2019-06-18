@@ -50,7 +50,7 @@
 				<li><a href="/template1/movie">Movie</a></li>
         <li><a href="/template1/store">Store</a></li>
         <li><a href="/template1/lovers">Lovers</a></li>
-        <li><a class="login" id="myBtn">Profile</a></li>
+        <li><a href="/template1/profile">Profile</a></li>
         <li><a href="/template1/link">Link</a></li>
 			</ul>
 			<!-- Social Links -->
@@ -88,11 +88,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="{{ asset('assets3/js/circle-progress.min.js') }}"></script>
 	<script src="{{ asset('assets3/js/main.js') }}"></script>
 
-	<script src="{{ asset('assets3/js/wavesurfer.min.js') }}"></script>
-	<script src="{{ asset('assets3/js/audio.js') }}"></script>
+	<!-- <script src="{{ asset('assets3/js/wavesurfer.min.js') }}"></script> -->
+	<!-- <script src="{{ asset('assets3/js/audio.js') }}"></script> -->
 
-	<script src="{{ asset('assets3/js/costum/template1.js') }}"></script>
-
+	<script src="{{ asset('assets3/js/custom/template1.js') }}"></script>
+	<script>
+	$( ".btn_login" ).click(function() {
+	  $( ".modal_login" ).show();
+	});
+	$( ".btn_close" ).click(function() {
+	  $( ".modal_login" ).hide();
+	});
+	</script>
 
     </body>
 </html>

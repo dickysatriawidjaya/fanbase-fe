@@ -19,23 +19,26 @@
 		<div class="container">
 			<div class="row about-box">
 				<div class="col-lg-6">
-					<img src="{{ asset('assets3/img/about-1.jpg') }}" alt="">
+					<img src="{{ asset('assets3/img/kangenband.jpg') }}" alt="">
 				</div>
 				<div class="col-lg-6">
 					<div class="ab-content">
 						<h4>A short History</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu tincidunt ligula. Fusce dictum ullamcorper purus, at elementum sem sollicitudin non. Sed id tristique lacus. Fusce pellentesque dignissim arcu, id hendrerit urna feugiat vitae. Pellentesque viverra aliquet arcu, vel aliquet est commodo quis. Nam tempus, nisl eu maximus viverra, magna quam porta nibh.</p>
+						<p>
+							NOAH (sebelumnya bernama Peterpan), adalah sebuah grup musik Pop/Rock alternatif dari Bandung, Indonesia. Grup musik ini dikenal sebagai grup musik terbesar atau paling terkenal di Indonesia, bahkan sedikitnya di dunia. Grup musik ini dibentuk pada tahun 2000 dan terkenal berkat lagunya "Mimpi Yang Sempurna".
+						</p>
 					</div>
 				</div>
 			</div>
 			<div class="row about-box">
 				<div class="col-lg-6 ab-push">
-					<img src="{{ asset('assets3/img/about-2.jpg') }}" alt="">
+					<img src="{{ asset('assets3/img/bg.jpg') }}" alt="">
 				</div>
 				<div class="col-lg-6 ab-pull">
 					<div class="ab-content">
-						<h4>Where?</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu tincidunt ligula. Fusce dictum ullamcorper purus, at elementum sem sollicit udin non. Sed id tristique lacus. Fusce pellentesque dignissim arcu, id hendrerit urna feugiat vitae. Pellentesque viverra aliquet arcu,  aliquet est commodo quis. Nam tempus, nisl eu maximus viverra, magna quam porta nibh.</p>
+						<p>
+							Grup musik ini juga terkenal dengan lirik yang sederhana dan puitis, musik yang mudah di ingat dengan ciri khas suara vokal Ariel.Sekarang grup musik ini hanya terdiri dari: Ariel, Uki, Lukman, dan David.Pada November 2006, Andika dan Indra keluar dari grup musik ini, posisinya digantikan oleh David dan Lucky sebagai additional player. Di pertengahan tahun 2008 David diangkat menjadi personel tetap menyusul masuknya Ihsan Norrachman menggantikan Lucky sebagai additional player, pada tahun 2013 Ihsan yang juga ikut andil dalam pembuatan album seperti seharusnya keluar, posisinya digantikan Boy Tondo. Di awal tahun 2015, Reza mengundurkan diri dari grup musik ini, posisinya lalu digantikan oleh Rio, dan pada Maret 2016, Boy Tondo keluar, posisinya digantikan oleh Lanlan sebagai additional player.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -59,32 +62,6 @@
 	<!-- Video preview section end -->
 
 
-	<!-- Services section -->
-	<section class="services-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 col-md-6 service-box">
-					<img src="{{ asset('assets3/img/services/1.jpg') }}" alt="">
-					<h4>Where?</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu  tincidunt ligula. Fusce dictum ullamcorper purus, at elementum sem sollicit udin non. Sed id tristique lacus. Fusce pellentesque dignissim arcu, id hendrerit urna feugiat vitae. Pellentesque viverra aliquet arcu,  aliquet est commodo quis. Nam tempus, nisl eu maximus viverra, magna quam porta nibh.</p>
-					<a href="" class="readmore">MORE INFO</a>
-				</div>
-				<div class="col-lg-4 col-md-6 service-box">
-					<img src="{{ asset('assets3/img/services/2.jpg') }}" alt="">
-					<h4>Where?</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu  tincidunt ligula. Fusce dictum ullamcorper purus, at elementum sem sollicit udin non. Sed id tristique lacus. Fusce pellentesque dignissim arcu, id hendrerit urna feugiat vitae. Pellentesque viverra aliquet arcu,  aliquet est commodo quis. Nam tempus, nisl eu maximus viverra, magna quam porta nibh.</p>
-					<a href="" class="readmore">MORE INFO</a>
-				</div>
-				<div class="col-lg-4 col-md-6 service-box">
-					<img src="{{ asset('assets3/img/services/3.jpg') }}" alt="">
-					<h4>Where?</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu  tincidunt ligula. Fusce dictum ullamcorper purus, at elementum sem sollicit udin non. Sed id tristique lacus. Fusce pellentesque dignissim arcu, id hendrerit urna feugiat vitae. Pellentesque viverra aliquet arcu,  aliquet est commodo quis. Nam tempus, nisl eu maximus viverra, magna quam porta nibh.</p>
-					<a href="" class="readmore">MORE INFO</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Services section end -->
 
 
 @endsection

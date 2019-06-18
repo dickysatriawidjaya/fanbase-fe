@@ -4,7 +4,7 @@
 <section class="page-info-section set-bg" data-setbg="{{ asset('assets3/img/page-info-bg.jpg') }}">
   <div class="container">
     <div class="section-title text-center">
-      <h2>Charts</h2>
+      <h2>Charts Links</h2>
     </div>
   </div>
 </section>
