@@ -1,5 +1,6 @@
 @extends('template1/menu/menu')
 @section('content')
+	{{$data->fan_base_name}}
 	<!-- Hero section -->
 	<section class="hero-section set-bg" data-setbg="{{ asset('assets3/img/bg.jpg') }}">
 

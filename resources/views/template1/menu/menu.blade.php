@@ -28,7 +28,6 @@
 	<div id="preloder">
 		<div class="loader"></div>
 	</div>
-
 	<!-- Header section -->
 	<header class="header-section">
 		<div class="header-warp">
@@ -42,7 +41,7 @@
 			</div>
 			<!-- Main Menu -->
 			<ul class="main-menu">
-				<li class=""><a href="/template1">Home</a></li>
+				<li class=""><a href="/">Home</a></li>
 				<li><a href="/template1/news">News</a></li>
 				<li><a href="/template1/live">Live</a></li>
 				<li><a href="/template1/media">Media</a></li>
