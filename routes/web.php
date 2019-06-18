@@ -40,7 +40,7 @@ Route::get('/template2/link','Template2Controller@link');
 Route::get('/home1','HomeController@index');
 
 // template2
-Route::get('/','Home1Controller@index');
+Route::get('/','HomeController@index');
 Route::get('/promo','PromoController@index');
 Route::get('/galpubg','GalleryController@galpubg');
 Route::get('/galapex','GalleryController@galapex');
