@@ -23,11 +23,10 @@ Route::get('/template1/lovers','Template1Controller@lovers');
 Route::get('/template1/profile','Template1Controller@profile');
 Route::get('/template1/link','Template1Controller@link');
 
-
 Route::get('/home1','HomeController@index');
 
 // template2
-Route::get('/','Home1Controller@index');
+Route::get('/','HomeController@index');
 Route::get('/promo','PromoController@index');
 Route::get('/galpubg','GalleryController@galpubg');
 Route::get('/galapex','GalleryController@galapex');
