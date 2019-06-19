@@ -2,7 +2,7 @@
   namespace App\Http\Controllers;
   use View;
   class Template2Controller extends Controller{
-    public function index()
+    public function index() 
     {
       return View::make('/template2/home')->render();
     }
