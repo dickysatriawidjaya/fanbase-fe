@@ -10,10 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/home1','HomeController@index');
 // template1
 Route::get('/template1','Template1Controller@index');
-Route::get('/template1/news','Template1Controller@news');
-Route::get('/template1/newsdetail','Template1Controller@newsdetail');
+Route::get('/news','HomeController@news');
+Route::get('/newsdetail/{id}','HomeController@news_detail');
 Route::get('/template1/live','Template1Controller@live');
 Route::get('/template1/media','Template1Controller@media');
 Route::get('/template1/music','Template1Controller@music');
@@ -36,16 +37,13 @@ Route::get('/template2/lovers','Template2Controller@lovers');
 Route::get('/template2/profile','Template2Controller@profile');
 Route::get('/template2/link','Template2Controller@link');
 
-
-Route::get('/home1','HomeController@index');
-
 // template2
 Route::get('/','HomeController@index');
 Route::get('/promo','PromoController@index');
 Route::get('/galpubg','GalleryController@galpubg');
 Route::get('/galapex','GalleryController@galapex');
 Route::get('/newslist','NewsListController@index');
-Route::get('/news','NewsListController@news');
+// Route::get('/news','NewsListController@news');
 
 // template3
 Route::get('/template3','Template3Controller@index');

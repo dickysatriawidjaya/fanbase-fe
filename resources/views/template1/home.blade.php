@@ -1,7 +1,12 @@
 @extends('template1/menu/menu')
 @section('content')
+<!-- {{env('API_PREFIX').$data->web_main_banner}} -->
 	<!-- Hero section -->
-	<section class="hero-section set-bg" data-setbg="{{ asset('assets3/img/bg.jpg') }}">
+	<?php
+	 $web_banner = str_replace('\b','/b',env('API_PREFIX').$data->web_main_banner);
+	//  echo $web_banner;
+	?>
+	<section class="hero-section" style="background-image:url({{$web_banner}})">
 
 		<div class="hero-slider owl-carousel">
 			<div class="hs-item">
@@ -57,7 +62,7 @@
 
 
 	<!-- Latest Podcast section -->
-	<section class="latest-podcast-section spad">
+	<!-- <section class="latest-podcast-section spad">
 		<div class="container">
 			<div class="section-title text-center">
 				<h2>Latest Album</h2>
@@ -78,12 +83,12 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- Latest Podcast section end -->
 
 
 	<!-- Charts section -->
-	<section class="charts-section">
+	<!-- <section class="charts-section">
 		<div class="container">
 			<div class="section-title text-center">
 				<h2>Charts</h2>
@@ -94,6 +99,6 @@
 				<img src="{{ asset('assets3/img/logo-big.png') }}" alt="">
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- Charts section end -->
 @endsection
