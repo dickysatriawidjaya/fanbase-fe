@@ -16,21 +16,25 @@
 <section class="blog-section">
 	<div class="container">
 		<div class="row">
+		@foreach($data->content as $c)
+			@if($c->category->category_name="News")
 			<div class="col-lg-4 col-md-6">
 				<div class="blog-item">
 					<div class="blog-image">
-						<img src="{{ asset('assets3/img/blog/1.jpg') }}" alt="#">
-						<a class="tag">#music</a>
+						<img src="{{ env('API_PREFIX').$c->image_banner }}" alt="#">
+						<a class="tag">{{$c->tag}}</a>
 					</div>
 					<div class="blog-content">
-						<div class="date">14 AUG 2018</div>
-						<h4>Lorem ipsum dolor sit amet con ce digism</h4>
-						<p>Sed scelerisque justo in aliquam congue. Phasel-lus diam erat, ullamcorper eget dolor id, dignis-sim euismod orci. Nam accumsan tortor ....</p>
-						<a href="/template1/newsdetail" class="readmore">READ MORE</a>
+						<div class="date">{{ date("d M Y", strtotime($c->created_at)) }}</div>
+						<h4>{{ $c->title }}</h4>
+						<p>{{ str_limit($c->content,30,"...") }}</p>
+						<a href="/newsdetail/{{$c->id}}?title={{$c->title}}" class="readmore">READ MORE</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-6">
+			@endif
+		@endforeach
+			<!-- <div class="col-lg-4 col-md-6">
 				<div class="blog-item">
 					<div class="blog-image">
 						<img src="{{ asset('assets3/img/blog/2.jpg') }}" alt="#">
@@ -99,10 +103,10 @@
 						<a href="/template1/newsdetail" class="readmore">READ MORE</a>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
-	<div class="pagination-warp">
+	<!-- <div class="pagination-warp">
 		<div class="container">
 			<div class="site-pagination">
 				<a href=""><i class="fa fa-angle-double-left"></i></a>
@@ -115,7 +119,7 @@
 				<a href=""><i class="fa fa-angle-double-right"></i></a>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 </section>
 <!--  Blog section end -->
@@ -123,7 +127,7 @@
 
 
 <!-- Footer Top section -->
-<section class="footer-top-section">
+<!-- <section class="footer-top-section">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-3 col-md-6 ft-widget">
@@ -185,7 +189,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 <!-- Footer Top section end -->
 
 

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<title>Noah Band FanBase</title>
+	<title>{{$data->web_title}}</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="88.0 radio station template">
 	<meta name="keywords" content="radio, station, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->
-	<link href="{{ asset('assets3/img/favicon.ico') }}" rel="shortcut icon"/>
+	<link href="{{  env('API_PREFIX').$data->web_logo }}" rel="shortcut icon"/>
 
 	<!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
@@ -33,7 +33,7 @@
 		<div class="header-warp">
 			<!-- Site Logo -->
 			<a href="home.html" class="site-logo">
-				<img src="{{ asset('assets3/img/logo.png') }}" alt="">
+				<img src="{{ env('API_PREFIX').$data->web_logo }}" width="50" height="50" alt="">
 			</a>
 			<!-- responsive -->
 			<div class="nav-switch">
@@ -42,15 +42,15 @@
 			<!-- Main Menu -->
 			<ul class="main-menu">
 				<li class=""><a href="/">Home</a></li>
-				<li><a href="/template1/news">News</a></li>
+				<li><a href="/news">News</a></li>
 				<li><a href="/template1/live">Live</a></li>
 				<li><a href="/template1/media">Media</a></li>
 				<li><a href="/template1/music">Music</a></li>
 				<li><a href="/template1/movie">Movie</a></li>
-        <li><a href="/template1/store">Store</a></li>
-        <li><a href="/template1/lovers">Lovers</a></li>
-        <li><a href="/template1/profile">Profile</a></li>
-        <li><a href="/template1/link">Link</a></li>
+				<li><a href="/template1/store">Store</a></li>
+				<li><a href="/template1/lovers">Lovers</a></li>
+				<li><a href="/template1/profile">Profile</a></li>
+				<li><a href="/template1/link">Link</a></li>
 			</ul>
 			<!-- Social Links -->
 			<!-- <div class="header-social-links">
@@ -69,10 +69,9 @@
 
 	<!-- Footer section -->
 	<footer class="footer-section">
-		<div class="contaoner">
+		<div class="container">
 			<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | FanBaseSite is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">YSA Support & Service</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+{{$data->web_footer}}<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 		</div>
 	</footer>
 	<!-- Footer section end -->
@@ -98,6 +97,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	$( ".btn_close" ).click(function() {
 	  $( ".modal_login" ).hide();
 	});
+	document.addEventListener('contextmenu', event => event.preventDefault());
 	</script>
 
     </body>

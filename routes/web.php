@@ -13,8 +13,8 @@
 Route::get('/home1','HomeController@index');
 // template1
 Route::get('/template1','Template1Controller@index');
-Route::get('/template1/news','Template1Controller@news');
-Route::get('/template1/newsdetail','Template1Controller@newsdetail');
+Route::get('/news','HomeController@news');
+Route::get('/newsdetail/{id}','HomeController@news_detail');
 Route::get('/template1/live','Template1Controller@live');
 Route::get('/template1/media','Template1Controller@media');
 Route::get('/template1/music','Template1Controller@music');
@@ -43,7 +43,7 @@ Route::get('/promo','PromoController@index');
 Route::get('/galpubg','GalleryController@galpubg');
 Route::get('/galapex','GalleryController@galapex');
 Route::get('/newslist','NewsListController@index');
-Route::get('/news','NewsListController@news');
+// Route::get('/news','NewsListController@news');
 
 // template3
 Route::get('/template3','Template3Controller@index');
