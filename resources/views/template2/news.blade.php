@@ -11,7 +11,7 @@
         <h3>News</h3>
       </div>
       <div class="btn_right">
-        <a class="btn" href="#">Category</a>
+        <a class="btn" href="/template2/detail/detail">Category</a>
       </div>
     </div>
     <!-- NEWS LISTS -->
@@ -20,7 +20,7 @@
         <p>Release</p>
       </div>
       <div class="list_title">
-        <a class="news_title" href="#">約3年ぶりとなるフルアルバムのリリースが決定!</a>
+        <a class="news_title" href="/template2/detail/detail">約3年ぶりとなるフルアルバムのリリースが決定!</a>
       </div>
       <div class="list_date">
         <p>31, Mar. 2019</p>
@@ -33,7 +33,7 @@
         <p>Release</p>
       </div>
       <div class="list_title">
-        <a class="news_title" href="#">約3年ぶりとなるフルアルバムのリリースが決定!</a>
+        <a class="news_title" href="/template2/detail/detail">約3年ぶりとなるフルアルバムのリリースが決定!</a>
       </div>
       <div class="list_date">
         <p>31, Mar. 2019</p>
@@ -46,7 +46,7 @@
         <p>Release</p>
       </div>
       <div class="list_title">
-        <a class="news_title" href="#">約3年ぶりとなるフルアルバムのリリースが決定!</a>
+        <a class="news_title" href="/template2/detail/detail">約3年ぶりとなるフルアルバムのリリースが決定!</a>
       </div>
       <div class="list_date">
         <p>31, Mar. 2019</p>
@@ -59,7 +59,7 @@
         <p>Release</p>
       </div>
       <div class="list_title">
-        <a class="news_title" href="#">約3年ぶりとなるフルアルバムのリリースが決定!</a>
+        <a class="news_title" href="/template2/detail/detail">約3年ぶりとなるフルアルバムのリリースが決定!</a>
       </div>
       <div class="list_date">
         <p>31, Mar. 2019</p>

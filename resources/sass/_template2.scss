@@ -2,12 +2,38 @@
     height: 80px;
     line-height: 80px;
     padding: 10px;
+    background: black;
+}
+#Header_creative #Top_bar .menu>li>a span {
+    border-right: 0;
+    border-bottom-width: 1px;
+    line-height: 38px;
+    background: black;
+}
+#Header_creative #Top_bar .menu>li>a span:hover {
+    color: #ff3680;
+}
+#Header_creative #Top_bar .top_bar_left {
+    width: 100% !important;
+    float: none;
+    background: black;
+}
+.row, .clearfix {
+    zoom: 1;
+    background: black;
+}
+.header-open #Header_creative {
+    left: 0;
+    background: black;
+}
+*{
+  background: white;
 }
 // HEAD
 .head{
   @extend %clearfix;
   width: 100%;
-  background: Black;
+  background: white;
   .hero{
     img{
       max-width: 100%;
@@ -18,7 +44,7 @@
 //BODY
 .content{
   @extend %clearfix;
-  background: black;
+  background: white;
   padding: 2%;
   //HOME
   .box{
@@ -39,7 +65,7 @@
       margin-top: -30.2%;
       margin-left: 0.5%;
       z-index: 2;
-      @include font(22px,0px,700,white);
+      @include font(1.7rem,0px,700,black);
       background: #f5a7bc;
       padding: 15px 8px 2px 8px;
       border-radius: 5px;
@@ -52,24 +78,28 @@
   .titlebox{
     @extend %clearfix;
     width: 100%;
+    padding: 0 10px;
     .title{
       width: 80%;
       float: left;
       h3{
-        @include font(22px,22px,700,white);
+        @include font(1.7rem,22px,700,black);
       }
     }
     .btn_right{
       float: right;
       margin-left: 1%;
       a.btn{
-        background: white;
+        background: #FFF;
+        color: #000 ;
+        border: #000 solid 1px;
         padding: 3px 8px 5px 8px;
         border-radius: 5px;
         text-decoration: none;
       }
       a.btn:hover{
         color: #ff3680;
+        border: #ff3680 solid 1px;
       }
     }
   }
@@ -82,8 +112,8 @@
     .category{
       float: left;
       p{
-        @include font(14px,22px,500,black);
-        background: white;
+        @include font(14px,22px,500,white);
+        background: black;
         padding: 3px 8px 5px 8px;
         border-radius: 5px;
         text-decoration: none;
@@ -94,7 +124,7 @@
       width: 90%;
       padding-left: 2%;
       a.news_title{
-        @include font(20px,29px,500,white);
+        @include font(1.7rem,29px,500,black);
       }
       a.news_title:hover{
         color: #ff3680;
@@ -104,7 +134,7 @@
       float: left;
       width: 100%;
       p{
-        @include font(12px,7px,400,white);
+        @include font(12px,7px,400,black);
       }
     }
   }
@@ -117,8 +147,8 @@
     .category{
       float: left;
       p{
-        @include font(14px,22px,500,black);
-        background: white;
+        @include font(14px,22px,500,white);
+        background: black;
         padding: 3px 8px 5px 8px;
         border-radius: 5px;
         text-decoration: none;
@@ -130,7 +160,7 @@
         width: 80%;
         padding-left: 2%;
         h4{
-          @include font(14px,29px,500,white);
+          @include font(1.7rem,29px,500,black);
         }
       }
       .live_title{
@@ -138,7 +168,20 @@
         width: 100%;
         margin-bottom: 1%;
         p{
-          @include font(18px,7px,400,white);
+          @include font(18px,7px,400,black);
+        }
+      }
+    }
+    a.live_a:hover{
+      color:#ff3680;
+      .list_title{
+        h4{
+          color:#ff3680;
+        }
+      }
+      .live_title{
+        p{
+          color:#ff3680;
         }
       }
     }
@@ -149,6 +192,7 @@
     padding: 1.5%;
     float: left;
     margin-bottom: 4%;
+    @extend %clearfix;
     img{
       width: 100%;
       max-height: 379px;
@@ -158,15 +202,18 @@
       top: 0px;
     }
     a.music_title{
-      @include font(18px,29px,400,white);
+      @include font(1.7rem,29px,400,black);
     margin-left: 3%;
+    }
+    a.music_title:hover{
+      color:#ff3680;
     }
     .category{
       float: left;
       margin: 0 1%;
       p{
-        @include font(14px,22px,500,black);
-        background: white;
+        @include font(14px,22px,500,white);
+        background: black;
         padding: 3px 8px 5px 8px;
         border-radius: 5px;
         text-decoration: none;
@@ -181,6 +228,7 @@
     float: left;
     margin-bottom: 4%;
     text-align: center;
+    @extend %clearfix;
     img{
       width: 100%;
       max-height: 379px;
@@ -188,19 +236,25 @@
       position: relative;
       z-index: 1;
       top: 0px;
+      outline-style: double;
+      outline-color: black;
     }
     .product{
       a.product_title{
-        @include font(18px,29px,400,white);
+        @include font(1.7rem,29px,400,black);
         margin-left: 3%;
         width: 100%;
         float: left;
+        margin-bottom: 3%;
+      }
+      a.product_title:hover{
+        color: #ff3680;
       }
       .category{
         float: left;
         p{
-          @include font(14px,22px,500,black);
-          background: white;
+          @include font(14px,22px,500,white);
+          background: black;
           padding: 3px 8px 5px 8px;
           border-radius: 5px;
           text-decoration: none;
@@ -221,7 +275,7 @@
       }
     }
     p{
-      @include font(18px,29px,400,white);
+      @include font(18px,29px,400,black);
       text-align: left;
       margin-left: 5%;
       float: left;
@@ -231,6 +285,67 @@
       text-align: left;
       margin-left: 5%;
       float: left;
+    }
+  }
+  //LOVERS
+  .lover_box{
+    width: 100%;
+    min-height: 500px;
+    @extend %clearfix;
+    .btn_center{
+      text-align: center;
+      margin-left: 1%;
+      a.btn{
+        background: #FFF;
+        color: #000 ;
+        border: #000 solid 1px;
+        padding: 3px 8px 5px 8px;
+        border-radius: 5px;
+        text-decoration: none;
+        float: left;
+        display: inline-block;
+        margin-right: 10px;
+        margin-top: 25px;
+      }
+      a.btn:hover{
+        color: #ff3680;
+        border: #ff3680 solid 1px;
+      }
+    }
+  }
+  //PROFILE
+  .profile_box{
+    width: 100%;
+    @extend %clearfix;
+    padding: 1%;
+    h4{
+      @include font(1rem,29px,500,black);
+    }
+    p{
+      @include font(14px,29px,400,black);
+    }
+    p.author{
+      @include font(14px,29px,300,black);
+      span.bold{
+        @include font(14px,29px,700,black);
+      }
+    }
+  }
+  //LINK
+  .link_box{
+    width: 100%;
+    @extend %clearfix;
+    padding: 1%;
+    table>tr:hover{
+      @include font(14px,29px,700,black);
+    }
+  }
+  //DETAILS
+  .detail_box{
+    width: 100%;
+    @extend %clearfix;
+    p{
+      @include font(14px,29px,400,black);
     }
   }
 }
@@ -246,12 +361,21 @@
         margin-top: 5%;
         margin-bottom: 2%;
         a{
-          @include font(14px,22px,500,#FFFFFF);
+          @include font(14px,22px,500,black);
+        }
+        a:hover{
+          @include font(14px,22px,500,#ff3680);
         }
       }
     }
     .copyright{
-      @include font(14px,22px,500,#FFFFFF);
+      @include font(14px,22px,300,black);
     }
   }
+}
+#Footer, #Footer .widget_recent_entries ul li a {
+    color: white;
+}
+#Footer {
+    background-color: white;
 }

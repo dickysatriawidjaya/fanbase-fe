@@ -54,7 +54,7 @@
               <div class="menu_wrapper">
                 <nav id="menu">
                   <ul id="menu-menu" class="menu menu-main">
-                    <li class="current-menu-item">
+                    <li class="">
                       <a href="/template2"><span>Home</span></a>
                     </li>
                     <li>

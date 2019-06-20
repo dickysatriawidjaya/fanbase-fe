@@ -5,11 +5,44 @@
   height: 80px;
   line-height: 80px;
   padding: 10px;
+  background: black;
+}
+
+#Header_creative #Top_bar .menu > li > a span {
+  border-right: 0;
+  border-bottom-width: 1px;
+  line-height: 38px;
+  background: black;
+}
+
+#Header_creative #Top_bar .menu > li > a span:hover {
+  color: #ff3680;
+}
+
+#Header_creative #Top_bar .top_bar_left {
+  width: 100% !important;
+  float: none;
+  background: black;
+}
+
+.row,
+.clearfix {
+  zoom: 1;
+  background: black;
+}
+
+.header-open #Header_creative {
+  left: 0;
+  background: black;
+}
+
+* {
+  background: white;
 }
 
 .head {
   width: 100%;
-  background: Black;
+  background: white;
 }
 
 .head .hero img {
@@ -18,7 +51,7 @@
 }
 
 .content {
-  background: black;
+  background: white;
   padding: 2%;
 }
 
@@ -42,10 +75,10 @@
   margin-top: -30.2%;
   margin-left: 0.5%;
   z-index: 2;
-  font-size: 22px;
+  font-size: 1.7rem;
   line-height: 0px;
   font-weight: 700;
-  color: white;
+  color: black;
   background: #f5a7bc;
   padding: 15px 8px 2px 8px;
   border-radius: 5px;
@@ -54,6 +87,7 @@
 
 .content .titlebox {
   width: 100%;
+  padding: 0 10px;
 }
 
 .content .titlebox .title {
@@ -62,10 +96,10 @@
 }
 
 .content .titlebox .title h3 {
-  font-size: 22px;
+  font-size: 1.7rem;
   line-height: 22px;
   font-weight: 700;
-  color: white;
+  color: black;
 }
 
 .content .titlebox .btn_right {
@@ -74,7 +108,9 @@
 }
 
 .content .titlebox .btn_right a.btn {
-  background: white;
+  background: #FFF;
+  color: #000;
+  border: #000 solid 1px;
   padding: 3px 8px 5px 8px;
   border-radius: 5px;
   text-decoration: none;
@@ -82,6 +118,7 @@
 
 .content .titlebox .btn_right a.btn:hover {
   color: #ff3680;
+  border: #ff3680 solid 1px;
 }
 
 .content .list_box {
@@ -98,8 +135,8 @@
   font-size: 14px;
   line-height: 22px;
   font-weight: 500;
-  color: black;
-  background: white;
+  color: white;
+  background: black;
   padding: 3px 8px 5px 8px;
   border-radius: 5px;
   text-decoration: none;
@@ -112,10 +149,10 @@
 }
 
 .content .list_box .list_title a.news_title {
-  font-size: 20px;
+  font-size: 1.7rem;
   line-height: 29px;
   font-weight: 500;
-  color: white;
+  color: black;
 }
 
 .content .list_box .list_title a.news_title:hover {
@@ -131,7 +168,7 @@
   font-size: 12px;
   line-height: 7px;
   font-weight: 400;
-  color: white;
+  color: black;
 }
 
 .content .list_box_live {
@@ -148,8 +185,8 @@
   font-size: 14px;
   line-height: 22px;
   font-weight: 500;
-  color: black;
-  background: white;
+  color: white;
+  background: black;
   padding: 3px 8px 5px 8px;
   border-radius: 5px;
   text-decoration: none;
@@ -162,10 +199,10 @@
 }
 
 .content .list_box_live a.live_a .list_title h4 {
-  font-size: 14px;
+  font-size: 1.7rem;
   line-height: 29px;
   font-weight: 500;
-  color: white;
+  color: black;
 }
 
 .content .list_box_live a.live_a .live_title {
@@ -178,7 +215,19 @@
   font-size: 18px;
   line-height: 7px;
   font-weight: 400;
-  color: white;
+  color: black;
+}
+
+.content .list_box_live a.live_a:hover {
+  color: #ff3680;
+}
+
+.content .list_box_live a.live_a:hover .list_title h4 {
+  color: #ff3680;
+}
+
+.content .list_box_live a.live_a:hover .live_title p {
+  color: #ff3680;
 }
 
 .content .music_box {
@@ -198,11 +247,15 @@
 }
 
 .content .music_box a.music_title {
-  font-size: 18px;
+  font-size: 1.7rem;
   line-height: 29px;
   font-weight: 400;
-  color: white;
+  color: black;
   margin-left: 3%;
+}
+
+.content .music_box a.music_title:hover {
+  color: #ff3680;
 }
 
 .content .music_box .category {
@@ -214,8 +267,8 @@
   font-size: 14px;
   line-height: 22px;
   font-weight: 500;
-  color: black;
-  background: white;
+  color: white;
+  background: black;
   padding: 3px 8px 5px 8px;
   border-radius: 5px;
   text-decoration: none;
@@ -237,16 +290,23 @@
   position: relative;
   z-index: 1;
   top: 0px;
+  outline-style: double;
+  outline-color: black;
 }
 
 .content .store_box .product a.product_title {
-  font-size: 18px;
+  font-size: 1.7rem;
   line-height: 29px;
   font-weight: 400;
-  color: white;
+  color: black;
   margin-left: 3%;
   width: 100%;
   float: left;
+  margin-bottom: 3%;
+}
+
+.content .store_box .product a.product_title:hover {
+  color: #ff3680;
 }
 
 .content .store_box .product .category {
@@ -257,8 +317,8 @@
   font-size: 14px;
   line-height: 22px;
   font-weight: 500;
-  color: black;
-  background: white;
+  color: white;
+  background: black;
   padding: 3px 8px 5px 8px;
   border-radius: 5px;
   text-decoration: none;
@@ -286,7 +346,7 @@
   font-size: 18px;
   line-height: 29px;
   font-weight: 400;
-  color: white;
+  color: black;
   text-align: left;
   margin-left: 5%;
   float: left;
@@ -300,6 +360,90 @@
   text-align: left;
   margin-left: 5%;
   float: left;
+}
+
+.content .lover_box {
+  width: 100%;
+  min-height: 500px;
+}
+
+.content .lover_box .btn_center {
+  text-align: center;
+  margin-left: 1%;
+}
+
+.content .lover_box .btn_center a.btn {
+  background: #FFF;
+  color: #000;
+  border: #000 solid 1px;
+  padding: 3px 8px 5px 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  float: left;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 25px;
+}
+
+.content .lover_box .btn_center a.btn:hover {
+  color: #ff3680;
+  border: #ff3680 solid 1px;
+}
+
+.content .profile_box {
+  width: 100%;
+  padding: 1%;
+}
+
+.content .profile_box h4 {
+  font-size: 1rem;
+  line-height: 29px;
+  font-weight: 500;
+  color: black;
+}
+
+.content .profile_box p {
+  font-size: 14px;
+  line-height: 29px;
+  font-weight: 400;
+  color: black;
+}
+
+.content .profile_box p.author {
+  font-size: 14px;
+  line-height: 29px;
+  font-weight: 300;
+  color: black;
+}
+
+.content .profile_box p.author span.bold {
+  font-size: 14px;
+  line-height: 29px;
+  font-weight: 700;
+  color: black;
+}
+
+.content .link_box {
+  width: 100%;
+  padding: 1%;
+}
+
+.content .link_box table > tr:hover {
+  font-size: 14px;
+  line-height: 29px;
+  font-weight: 700;
+  color: black;
+}
+
+.content .detail_box {
+  width: 100%;
+}
+
+.content .detail_box p {
+  font-size: 14px;
+  line-height: 29px;
+  font-weight: 400;
+  color: black;
 }
 
 #Footer {
@@ -325,14 +469,30 @@
   font-size: 14px;
   line-height: 22px;
   font-weight: 500;
-  color: #FFFFFF;
+  color: black;
+}
+
+#Footer .footer_copy .footer .footerbox a:hover {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #ff3680;
 }
 
 #Footer .footer_copy .copyright {
   font-size: 14px;
   line-height: 22px;
-  font-weight: 500;
-  color: #FFFFFF;
+  font-weight: 300;
+  color: black;
+}
+
+#Footer,
+#Footer .widget_recent_entries ul li a {
+  color: white;
+}
+
+#Footer {
+  background-color: white;
 }
 
 .head:after,
@@ -340,7 +500,13 @@
 .content .box:after,
 .content .titlebox:after,
 .content .list_box:after,
-.content .list_box_live:after {
+.content .list_box_live:after,
+.content .music_box:after,
+.content .store_box:after,
+.content .lover_box:after,
+.content .profile_box:after,
+.content .link_box:after,
+.content .detail_box:after {
   content: "";
   clear: both;
   display: table;

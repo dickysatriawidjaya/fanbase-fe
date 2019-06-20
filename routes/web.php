@@ -24,6 +24,7 @@ Route::get('/template1/lovers','Template1Controller@lovers');
 Route::get('/template1/profile','Template1Controller@profile');
 Route::get('/template1/link','Template1Controller@link');
 
+
 //template2
 Route::get('/template2','Template2Controller@index');
 Route::get('/template2/news','Template2Controller@news');
@@ -36,6 +37,7 @@ Route::get('/template2/store','Template2Controller@store');
 Route::get('/template2/lovers','Template2Controller@lovers');
 Route::get('/template2/profile','Template2Controller@profile');
 Route::get('/template2/link','Template2Controller@link');
+Route::get('/template2/detail/detail','Template2Controller@detail');
 
 // template2
 Route::get('/','HomeController@index');
