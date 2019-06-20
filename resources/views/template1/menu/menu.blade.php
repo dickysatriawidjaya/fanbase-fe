@@ -32,9 +32,10 @@
 	<header class="header-section">
 		<div class="header-warp">
 			<!-- Site Logo -->
-			<a href="home.html" class="site-logo">
+			<a href="/" class="site-logo">
 				<img src="{{ env('API_PREFIX').$data->web_logo }}" width="50" height="50" alt="">
 			</a>
+			<p>{{$data->web_title}}</p>
 			<!-- responsive -->
 			<div class="nav-switch">
 				<i class="fa fa-bars"></i>
@@ -43,14 +44,14 @@
 			<ul class="main-menu">
 				<li class=""><a href="/">Home</a></li>
 				<li><a href="/news">News</a></li>
-				<li><a href="/template1/live">Live</a></li>
-				<li><a href="/template1/media">Media</a></li>
-				<li><a href="/template1/music">Music</a></li>
-				<li><a href="/template1/movie">Movie</a></li>
-				<li><a href="/template1/store">Store</a></li>
-				<li><a href="/template1/lovers">Lovers</a></li>
-				<li><a href="/template1/profile">Profile</a></li>
-				<li><a href="/template1/link">Link</a></li>
+				<li><a href="/live">Live</a></li>
+				<li><a href="/media">Media</a></li>
+				<li><a href="/music">Music</a></li>
+				<li><a href="/movie">Movie</a></li>
+				<li><a href="/store">Store</a></li>
+				<li><a href="/lovers">Lovers</a></li>
+				<li><a href="/profile">Profile</a></li>
+				<li><a href="/link">Link</a></li>
 			</ul>
 			<!-- Social Links -->
 			<!-- <div class="header-social-links">
@@ -98,6 +99,23 @@
 	  $( ".modal_login" ).hide();
 	});
 	document.addEventListener('contextmenu', event => event.preventDefault());
+
+	$( ".live_detail" ).click(function() {
+		var id = $(this).attr('data-id');
+		var title = $(this).attr('data-title');
+		window.location.href = "/livedetail/"+id+"?title="+title;
+	});
+
+	$( ".foto_detail" ).click(function() {
+		var id = $(this).attr('data-id');
+		var title = $(this).attr('data-title');
+		window.location.href = "/musicdetail/"+id+"?title="+title;
+	});
+	$( ".video_detail" ).click(function() {
+		var id = $(this).attr('data-id');
+		var title = $(this).attr('data-title');
+		window.location.href = "/moviedetail/"+id+"?title="+title;
+	});
 	</script>
 
     </body>

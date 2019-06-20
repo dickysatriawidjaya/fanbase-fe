@@ -13,7 +13,7 @@
 	<!-- Shows  section -->
 	<section class="shows-section spad">
 		<div class="container">
-			<ul class="shows-menu nav nav-tabs" role="tablist">
+			<!-- <ul class="shows-menu nav nav-tabs" role="tablist">
 				<li class="nav-item">
 					<a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Monday</a>
 				</li>
@@ -35,34 +35,25 @@
 				<li class="nav-item">
 					<a class="nav-link" data-toggle="tab" href="#tab-7" role="tab" aria-controls="tab-7" aria-selected="false">Sunday</a>
 				</li>
-			</ul>
+			</ul> -->
 			<div class="tab-content" id="myTabContent">
 				<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
 					<div class="row">
-						<div class="col-lg-4 col-md-9 m-md-auto">
+					@foreach($data->content as $c)
+						<div class="col-lg-4 col-md-9 m-md-auto live_detail" data-id = "{{$c->id}}" data-title = "{{$c->title}}">
 							<div class="show-item">
-								<img src="{{ asset('assets3/img/shows/1.jpg') }}" alt="">
-								<div class="show-info"><span>10:00 AM</span>TV Show @ ANTV</div>
+								<img src="{{ env('API_PREFIX').$c->image_banner }}" alt="">
+								<div class="show-info"><span>{{$c->tag}} {{ date("d M Y", strtotime($c->created_at))}}</span>{{$c->title}}</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-9 m-md-auto">
-							<div class="show-item">
-								<img src="{{ asset('assets3/img/shows/2.jpg') }}" alt="">
-								<div class="show-info"><span>12:00 PM</span>TV Show @ Indosiar</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-9 m-md-auto">
-							<div class="show-item">
-								<img src="{{ asset('assets3/img/shows/3.jpg') }}" alt="">
-								<div class="show-info"><span>15:00 AM</span>Radio Show @ Net Tv</div>
-							</div>
-						</div>
+					@endforeach
 					</div>
+
 					<div class="text-center pt-5">
 						<button class="site-btn">LOAD MORE</button>
 					</div>
 				</div>
-				<div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+				<!-- <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
 					<div class="row">
 						<div class="col-lg-4 col-md-9 m-md-auto">
 							<div class="show-item">
@@ -193,10 +184,11 @@
 					<div class="text-center pt-5">
 						<button class="site-btn">LOAD MORE</button>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</section>
 	<!-- Shows  section end -->
 
 @endsection
+
