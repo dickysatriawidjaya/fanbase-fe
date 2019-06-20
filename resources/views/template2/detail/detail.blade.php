@@ -8,7 +8,7 @@
 <div class="content">
   <div class="titlebox">
     <div class="title">
-      <h3>PROFILE</h3>
+      <h3>DETAIL (-------)</h3>
     </div>
   </div>
   <div class="profile_box">

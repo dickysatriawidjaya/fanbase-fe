@@ -49,3 +49,16 @@ Route::get('/newslist','NewsListController@index');
 
 // template3
 Route::get('/template3','Template3Controller@index');
+Route::get('/template3/news','Template3Controller@news');
+Route::get('/template3/newsdetail','Template3Controller@newsdetail');
+Route::get('/template3/live','Template3Controller@live');
+Route::get('/template3/media','Template3Controller@media');
+Route::get('/template3/music','Template3Controller@music');
+Route::get('/template3/movie','Template3Controller@movie');
+Route::get('/template3/store','Template3Controller@store');
+Route::get('/template3/lovers','Template3Controller@lovers');
+Route::get('/template3/profile','Template3Controller@profile');
+Route::get('/template3/link','Template3Controller@link');
+Route::get('/template3/detail/detail1','Template3Controller@detail1');
+Route::get('/template3/detail/detail2','Template3Controller@detail2');
+Route::get('/template3/detail/detail3','Template3Controller@detail3');

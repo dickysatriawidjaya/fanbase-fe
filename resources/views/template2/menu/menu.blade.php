@@ -11,7 +11,7 @@
 
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
-    <title>Be</title>
+    <title>BlackPink - FanPage</title>
     <meta name="description">
     <meta name="author">
 
