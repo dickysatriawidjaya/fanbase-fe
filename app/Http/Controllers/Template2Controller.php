@@ -46,5 +46,9 @@
     {
       return View::make('/template2/link')->render();
     }
+    public function detail()
+    {
+      return View::make('/template2/detail/detail')->render();
+    }
   }
  ?>

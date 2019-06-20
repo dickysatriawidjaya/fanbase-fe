@@ -1,0 +1,20 @@
+//pseudoclasses here
+%text-center{
+  text-align: center !important;
+}
+%text-left {
+  text-align: left !important;
+}
+%transition{
+    transition:all 0.2s ease-out;
+}
+%shadow{
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+%clearfix{
+    &:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
