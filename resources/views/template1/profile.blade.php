@@ -19,18 +19,15 @@
 		<div class="container">
 			<div class="row about-box">
 				<div class="col-lg-6">
-					<img src="{{ asset('assets3/img/kangenband.jpg') }}" alt="">
+					<img src="{{ env('API_PREFIX').$data->web_main_banner }}" alt="">
 				</div>
 				<div class="col-lg-6">
 					<div class="ab-content">
-						<h4>A short History</h4>
-						<p>
-							NOAH (sebelumnya bernama Peterpan), adalah sebuah grup musik Pop/Rock alternatif dari Bandung, Indonesia. Grup musik ini dikenal sebagai grup musik terbesar atau paling terkenal di Indonesia, bahkan sedikitnya di dunia. Grup musik ini dibentuk pada tahun 2000 dan terkenal berkat lagunya "Mimpi Yang Sempurna".
-						</p>
+						{{$data->web_profile}}
 					</div>
 				</div>
 			</div>
-			<div class="row about-box">
+			<!-- <div class="row about-box">
 				<div class="col-lg-6 ab-push">
 					<img src="{{ asset('assets3/img/bg.jpg') }}" alt="">
 				</div>
@@ -41,14 +38,14 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</section>
 	<!--  About section end -->
 
 
 	<!-- Video preview section -->
-	<section class="video-preview-section set-bg spad" data-setbg="{{ asset('assets3/img/video-preview-bg.jpg') }}">
+	<!-- <section class="video-preview-section set-bg spad" data-setbg="{{ asset('assets3/img/video-preview-bg.jpg') }}">
 		<div class="container">
 			<div class="vp-content">
 				<div class="section-title text-center">
@@ -58,7 +55,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- Video preview section end -->
 
 

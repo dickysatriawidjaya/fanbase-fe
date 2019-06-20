@@ -16,65 +16,38 @@
 <section class="blog-section">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-4 col-md-6">
+		@foreach($data->video as $c)
+			<div class="col-lg-4 col-md-6 video_detail" data-id = "{{$c->id}}" data-title = "{{$c->title}}"">
 				<div class="blog-item">
 					<div class="blog-image">
-						<img src="{{ asset('assets3/img/blog/albam.jpg') }}" alt="#">
+						<!-- <img src="{{ asset('assets3/img/blog/movie noah.jpg') }}" alt="#"> -->
+						<iframe src="{{$c->url}}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 						<a class="tag">#movie</a>
 					</div>
 					<div class="blog-content">
-						<div class="date">14 AUG 2018</div>
-						<h4>Sings Legends</h4>
-						<p>Sings Legends merupakan album studio karya Noah.
-              Album ini merupakan album ketiga mereka yang dirilis untuk memperkenalkan kembali lagu-lagu terbaik dari musisi era tahun 1960an hingga tahun 1990an.
-              </p>
-						<button class="site-btn btn_login" >Download</button>
-            <!-- Trigger/Open The Modal -->
-            <!-- The Modal -->
-            <div  class="modal modal_login">
-              <!-- Modal content -->
-              <div class="modal-content">
-                <span class="btn_close">&times;</span>
-                <p>Please Login</p>
+						<div class="date">{{ date("d M Y", strtotime($c->created_at)) }}</div>
+						<h4>{{$c->title}}</h4>
+						<p>{{$c->description}}</p>
+						<!-- <button class="site-btn btn_login" >Download</button> -->
+						<div  class="modal modal_login">
+						<!-- Modal content -->
+							<div class="modal-content">
+								<span class="btn_close">&times;</span>
+								<p>Please Login</p>
 								<button type="button" class="site-btn" name="button">Login</button>
-              </div>
-            </div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-6">
-				<div class="blog-item">
-					<div class="blog-image">
-						<img src="{{ asset('assets3/img/blog/movie noah.jpg') }}" alt="#">
-						<a class="tag">#movie</a>
-					</div>
-					<div class="blog-content">
-						<div class="date">17 AUG 2019</div>
-						<h4>Know As Peterpan</h4>
-						<p>Know As Peterpan merupakan album studio karya Noah.
-              Album ini merupakan album ketiga mereka yang dirilis untuk memperkenalkan kembali lagu-lagu terbaik dari musisi era tahun 1960an hingga tahun 1990an.
-              </p>
-						<button class="site-btn btn_login" >Download</button>
-            <!-- Trigger/Open The Modal -->
-            <!-- The Modal -->
-            <div  class="modal modal_login">
-              <!-- Modal content -->
-              <div class="modal-content">
-                <span class="btn_close">&times;</span>
-                <p>Please Login</p>
-								<button type="button" class="site-btn" name="button">Login</button>
-              </div>
-            </div>
-					</div>
-				</div>
-			</div>
+		@endforeach
 		</div>
-	</div>
-	<div class="pagination-warp">
+	<!-- </div>
 		<div class="container">
 			<div class="site-pagination">
 				<a href=""><i class="fa fa-angle-double-left"></i></a>
-				<a href="">1</a>
+		<div class="pagination-warp">
+			<a href="">1</a>
 				<a class="active" href="">2</a>
 				<a href="">3</a>
 				<a href="">4</a>
@@ -83,7 +56,7 @@
 				<a href=""><i class="fa fa-angle-double-right"></i></a>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 </section>
 <!--  Blog section end -->
@@ -91,7 +64,7 @@
 
 
 <!-- Footer Top section -->
-<section class="footer-top-section">
+<!-- <section class="footer-top-section">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-3 col-md-6 ft-widget">
@@ -153,7 +126,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 <!-- Footer Top section end -->
 
 

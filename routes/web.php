@@ -15,14 +15,18 @@ Route::get('/home1','HomeController@index');
 Route::get('/template1','Template1Controller@index');
 Route::get('/news','HomeController@news');
 Route::get('/newsdetail/{id}','HomeController@news_detail');
-Route::get('/template1/live','Template1Controller@live');
-Route::get('/template1/media','Template1Controller@media');
-Route::get('/template1/music','Template1Controller@music');
-Route::get('/template1/movie','Template1Controller@movie');
-Route::get('/template1/store','Template1Controller@store');
-Route::get('/template1/lovers','Template1Controller@lovers');
-Route::get('/template1/profile','Template1Controller@profile');
-Route::get('/template1/link','Template1Controller@link');
+Route::get('/live','HomeController@live');
+Route::get('/livedetail/{id}','HomeController@live_detail');
+Route::get('/media','HomeController@media');
+Route::get('/mediadetail/{id}','HomeController@media_detail');
+Route::get('/music','HomeController@music');
+Route::get('/musicdetail/{id}','HomeController@get_foto_detail');
+Route::get('/movie','HomeController@movie');
+Route::get('/moviedetail/{id}','HomeController@get_movie_detail');
+Route::get('/store','HomeController@store');
+Route::get('/lovers','HomeController@lovers');
+Route::get('/profile','HomeController@profile');
+Route::get('/link','HomeController@link');
 
 
 //template2
