@@ -13,3 +13,11 @@
     opacity: 1;
   }
 }
+.fotobox{
+  width: 100%;
+  @extend %clearfix;
+  .foto_detail{
+    width: 33%;
+    float: left;
+  }
+}

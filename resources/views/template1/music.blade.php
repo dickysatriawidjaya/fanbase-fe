@@ -23,7 +23,7 @@
 						<img src="{{ env('API_PREFIX').$c->physical_path }}" alt="#">
 						<a class="tag">#movie</a>
 					</div>
-					
+
 					<div class="blog-content">
 						<div class="date">{{ date("d M Y", strtotime($c->created_at)) }}</div>
 						<h4>{{$c->title}}</h4>
@@ -40,11 +40,10 @@
 							</div>
 						</div>
 					</div>
-					
 				</div>
 			</div>
+			@endforeach
 		</div>
-		@endforeach
 	</div>
 	<!-- <div class="pagination-warp">
 		<div class="container">

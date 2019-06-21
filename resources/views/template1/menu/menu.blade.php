@@ -3,9 +3,9 @@
 <head>
 	<title>{{$data->web_title}}</title>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="88.0 radio station template">
 	<meta name="keywords" content="radio, station, creative, html">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->
 	<link href="{{  env('API_PREFIX').$data->web_logo }}" rel="shortcut icon"/>
 
@@ -33,9 +33,9 @@
 		<div class="header-warp">
 			<!-- Site Logo -->
 			<a href="/" class="site-logo">
-				<img src="{{ env('API_PREFIX').$data->web_logo }}" width="50" height="50" alt="">
+				<img src="{{ env('API_PREFIX').$data->web_logo }}" alt="">
+				<p class="title_site">{{$data->web_title}}</p>
 			</a>
-			<p>{{$data->web_title}}</p>
 			<!-- responsive -->
 			<div class="nav-switch">
 				<i class="fa fa-bars"></i>

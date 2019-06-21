@@ -8,26 +8,6 @@
 	?>
 	<section class="hero-section" style="background-image:url({{$web_banner}})">
 
-		<div class="hero-slider owl-carousel">
-			<div class="hs-item">
-				<div class="container">
-					<span>UP NEXT</span>
-					<h2>DJ Khaled Exclusive Interview</h2>
-				</div>
-			</div>
-			<div class="hs-item">
-				<div class="container">
-					<span>UP NEXT</span>
-					<h2>David Guetta Exclusive Interview</h2>
-				</div>
-			</div>
-			<div class="hs-item">
-				<div class="container">
-					<span>UP NEXT</span>
-					<h2>Dj snake Exclusive Track</h2>
-				</div>
-			</div>
-		</div>
 	</section>
 	<!-- Hero section end -->
 
@@ -37,23 +17,25 @@
 		<div class="container">
 			<div class="row">
 					<div class="col-md-4">
-						<a href="/template1/profile">
+						<a href="/profile">
 							<div class="promo-box set-bg" data-setbg="{{ asset('assets3/img/promo/1.jpg') }}">
 								<h2>Our Profile</h2>
 							</div>
 						</a>
 					</div>
 				<div class="col-md-4">
-					<a href="/template1/live">
+					<a href="/live">
 						<div class="promo-box set-bg" data-setbg="{{ asset('assets3/img/promo/2.jpg') }}">
 							<h2>Our Activities</h2>
 						</div>
 					</a>
 				</div>
 				<div class="col-md-4">
-					<div class="promo-box set-bg" data-setbg="{{ asset('assets3/img/promo/3.jpg') }}">
-						<h2>Events</h2>
-					</div>
+					<a href="/music">
+						<div class="promo-box set-bg" data-setbg="{{ asset('assets3/img/promo/3.jpg') }}">
+							<h2>Our Albums</h2>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
