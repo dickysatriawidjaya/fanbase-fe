@@ -50,7 +50,7 @@
                                                         May 9, 2014
                                                     </div>
                                                     <div class="desc">
-                                                        <h4><a href="content/animals/article-4.html">Proin dui sodales imperdi sit sapien fames ac luctus</a></h4>
+                                                        <h4><a href="content/animals/article-4.html">Our Profile</a></h4>
                                                         <hr class="hr_color" />
                                                         <a href="content/animals/article-4.html" class="button button_left button_js"><span class="button_icon"><i class="icon-layout"></i></span><span class="button_label">Read more</span></a>
                                                     </div>
@@ -68,7 +68,7 @@
                                                         May 8, 2014
                                                     </div>
                                                     <div class="desc">
-                                                        <h4><a href="content/animals/article-5.html">Vestibulum commodo volutpat laoreet</a></h4>
+                                                        <h4><a href="content/animals/article-5.html">Gallery</a></h4>
                                                         <hr class="hr_color" />
                                                         <a href="content/animals/article-5.html" class="button button_left button_js"><span class="button_icon"><i class="icon-layout"></i></span><span class="button_label">Read more</span></a>
                                                     </div>
@@ -86,7 +86,7 @@
                                                         May 7, 2014
                                                     </div>
                                                     <div class="desc">
-                                                        <h4><a href="content/animals/article-6.html">Quisque lorem tortor fringilla sed vesti bulum justo vel</a></h4>
+                                                        <h4><a href="content/animals/article-6.html">LIVE</a></h4>
                                                         <hr class="hr_color" />
                                                         <a href="content/animals/article-6.html" class="button button_left button_js"><span class="button_icon"><i class="icon-layout"></i></span><span class="button_label">Read more</span></a>
                                                     </div>
@@ -153,172 +153,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="section" style="padding-top:70px; padding-bottom:0px; background-color:#e5e5e5">
-                        <div class="section_wrapper clearfix">
-                            <div class="items_group clearfix">
-                                <!-- One Second (1/2) Column -->
-                                <div class="column one-second column_column">
-                                    <div class="column_attr ">
-                                        <hr class="no_line" style="margin: 0 auto 50px;" />
-                                        <h2>What's interesting about <span class="underline">cats</span></h2>
-                                        <hr class="no_line" style="margin: 0 auto 50px;" />
-                                        <!-- One Second (1/2) Column -->
-                                        <div class="column one-second">
-                                            <h5 style="margin-bottom: 6px;">Lorem ipsum dolor mit</h5>
-                                            <p>
-                                                Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum aucmaurisaliquam massa nisl quis neque Suspendisse in orci enim diam magna urna arcu iaculis arc magna suscipit. <a style="font-weight: 700;" href="#">More</a>
-                                            </p>
-                                            <hr class="no_line hrmargin_b_40" />
-                                            <h5 style="margin-bottom: 6px;">Aenean ipsum dolor sit</h5>
-                                            <p>
-                                                Pellentesque tempus at, molestie justo non nulla. Nullam suscipit dolor augue quam congue quis Aenean ipsum dolor sit amet metus eleifend magna sus cipit ultricies velit cursus at, mollis risus. <a style="font-weight: 700;" href="#">More</a>
-                                            </p>
-                                        </div>
-                                        <!-- One Second (1/2) Column -->
-                                        <div class="column one-second">
-                                            <h5 style="margin-bottom: 6px;">Donec scele risque porttitor</h5>
-                                            <p>
-                                                Quisque augue. Lorem ipsum ante, porta est. Donec scelerisque porttitor vel, massa. Suspendisse eu enim. Aenean aliquet, lacus a nunc. Vestibulum euismod pulvinar, pede ultrices augue. Donec faucibus. <a style="font-weight: 700;" href="#">More</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- One Second (1/2) Column -->
-                                <div class="column one-second column_image">
-                                    <div class="image_frame no_link scale-with-grid aligncenter no_border">
-                                        <div class="image_wrapper"><img class="scale-with-grid" src="{{ asset('asset3/images/home_animals_cat.jpg') }}" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section" style="padding-top:20px; padding-bottom:0px; ">
-                        <div class="section_wrapper clearfix">
-                            <div class="items_group clearfix"></div>
-                        </div>
-                    </div>
-                    <div class="section" style="padding-top:70px; padding-bottom:20px; background-color:#e5e5e5">
-                        <div class="section_wrapper clearfix">
-                            <div class="items_group clearfix">
-                                <!-- One Second (1/2) Column -->
-                                <div class="column one-second column_image">
-                                    <div class="image_frame no_link scale-with-grid aligncenter no_border">
-                                        <div class="image_wrapper"><img class="scale-with-grid" src="{{ asset('asset3/images/home_animals_dog.jpg') }}" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- One Second (1/2) Column -->
-                                <div class="column one-second column_column">
-                                    <div class="column_attr ">
-                                        <hr class="no_line" style="margin: 0 auto 50px;" />
-                                        <h2>What's interesting about <span class="underline">dogs</span></h2>
-                                        <hr class="no_line" style="margin: 0 auto 50px;" />
-                                        <!-- One Second (1/2) Column -->
-                                        <div class="column one-second">
-                                            <h5 style="margin-bottom: 6px;">Lorem ipsum dolor mit</h5>
-                                            <p>
-                                                Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum aucmaurisaliquam massa nisl quis neque Suspendisse in orci enim diam magna urna arcu iaculis arc magna suscipit. <a style="font-weight: 700;" href="#">More</a>
-                                            </p>
-                                            <hr class="no_line hrmargin_b_40" />
-                                            <h5 style="margin-bottom: 6px;">Aenean ipsum dolor sit</h5>
-                                            <p>
-                                                Pellentesque tempus at, molestie justo non nulla. Nullam suscipit dolor augue quam congue quis Aenean ipsum dolor sit amet metus eleifend magna sus cipit ultricies velit cursus at, mollis risus. <a style="font-weight: 700;" href="#">More</a>
-                                            </p>
-                                        </div>
-                                        <!-- One Second (1/2) Column -->
-                                        <div class="column one-second">
-                                            <h5 style="margin-bottom: 6px;">Donec scele risque porttitor</h5>
-                                            <p>
-                                                Quisque augue. Lorem ipsum ante, porta est. Donec scelerisque porttitor vel, massa. Suspendisse eu enim. Aenean aliquet, lacus a nunc. Vestibulum euismod pulvinar, pede ultrices augue. Donec faucibus. <a style="font-weight: 700;" href="#">More</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section" style="padding-top:80px; padding-bottom:30px; ">
+                    <div class="section" style="padding-top:50px; padding-bottom:0px; ">
                         <div class="section_wrapper clearfix">
                             <div class="items_group clearfix">
                                 <!-- One full width row-->
                                 <div class="column one column_column">
                                     <div class="column_attr align_center">
-                                        <h2>Your pupils' photos</h2>
-                                        <div class="image_frame no_link scale-with-grid no_border">
-                                            <div class="image_wrapper"><img class="scale-with-grid" src="{{ asset('asset3/images/home_animals_line.png') }}" alt="">
-                                            </div>
-                                        </div>
-                                        <hr class="no_line hrmargin_b_15">
-                                        <p class="big">
-                                            Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ip sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque Suspendisse in orci enim.
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- One full width row-->
-                                <div class="column one column_column">
-                                    <div class="column_attr ">
-                                        <!-- Image Gallery-->
-                                        <div id='gallery-1' class='gallery galleryid-2 gallery-columns-3 gallery-size-thumbnail '>
-                                            <!-- Gallery item -->
-                                            <dl class='gallery-item'>
-                                                <dt class='gallery-icon landscape'>
-													<a href='{{ asset('asset3/images/home_animals_photo2.jpg') }}'><img width="300" height="300" src="{{ asset('asset3/images/home_animals_photo2-300x300.jpg') }}" class="attachment-thumbnail" alt="home_animals_photo2" /></a>
-												</dt>
-                                                <dd></dd>
-                                            </dl>
-                                            <!-- Gallery item -->
-                                            <dl class='gallery-item'>
-                                                <dt class='gallery-icon landscape'>
-													<a href='{{ asset('asset3/images/home_animals_photo7.jpg') }}'><img width="300" height="300" src="{{ asset('asset3/images/home_animals_photo7-300x300.jpg') }}" class="attachment-thumbnail" alt="home_animals_photo7" /></a>
-												</dt>
-                                                <dd></dd>
-                                            </dl>
-                                            <!-- Gallery item -->
-                                            <dl class='gallery-item'>
-                                                <dt class='gallery-icon landscape'>
-													<a href='{{ asset('asset3/images/home_animals_photo13.jpg') }}'><img width="300" height="300" src="{{ asset('asset3/images/home_animals_photo13-300x300.jpg') }}" class="attachment-thumbnail" alt="home_animals_photo13" /></a>
-												</dt>
-                                                <dd></dd>
-                                            </dl>
-                                            <br class="flv_clear_both" />
-                                            <!-- Gallery item -->
-                                            <dl class='gallery-item'>
-                                                <dt class='gallery-icon landscape'>
-													<a href='{{ asset('asset3/images/home_animals_photo15.jpg') }}'><img width="300" height="300" src="{{ asset('asset3/images/home_animals_photo15-300x300.jpg') }}" class="attachment-thumbnail" alt="home_animals_photo15" /></a>
-												</dt>
-                                                <dd></dd>
-                                            </dl>
-                                            <!-- Gallery item -->
-                                            <dl class='gallery-item'>
-                                                <dt class='gallery-icon landscape'>
-													<a href='{{ asset('asset3/images/home_animals_photo5.jpg') }}'><img width="300" height="300" src="{{ asset('asset3/images/home_animals_photo5-300x300.jpg') }}" class="attachment-thumbnail" alt="home_animals_photo5" /></a>
-												</dt>
-                                                <dd></dd>
-                                            </dl>
-                                            <!-- Gallery item -->
-                                            <dl class='gallery-item'>
-                                                <dt class='gallery-icon landscape'>
-													<a href='{{ asset('asset3/images/home_animals_photo11.jpg') }}'><img width="300" height="300" src="{{ asset('asset3/images/home_animals_photo11-300x300.jpg') }}" class="attachment-thumbnail" alt="home_animals_photo11" /></a>
-												</dt>
-                                                <dd></dd>
-                                            </dl>
-                                            <br class="flv_clear_both" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- One full width row-->
-                                <div class="column one column_column">
-                                    <div class="column_attr align_center">
-                                        <h2 style="font-weight: 400;">We <img style="position: relative; top: 4px;" src="{{ asset('asset3/images/home_animals_heart.png') }}" alt=""> animals</h2>
+                                        <h2 style="font-weight: 400;">We <img style="position: relative; top: 4px;" src="{{ asset('asset3/images/home_animals_heart.png') }}" alt=""> Noah</h2>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="section the_content no_content">
-                        <div class="section_wrapper">
-                            <div class="the_content_wrapper"></div>
                         </div>
                     </div>
                 </div>

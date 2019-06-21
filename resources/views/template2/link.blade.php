@@ -2,7 +2,7 @@
 @section('content')
 <div class="head">
   <div class="hero">
-    <img class="hero_image" src="{{ asset('assets2/images/bpheader.jpg') }}"/>
+    <img class="hero_image" src="{{ env('API_PREFIX').$data->web_main_banner }}"/>
   </div>
 </div>
 <div class="content">

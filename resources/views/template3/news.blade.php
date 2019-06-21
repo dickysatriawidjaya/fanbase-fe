@@ -251,6 +251,18 @@
             </div>
         </div>
     </div>
+    <div class="section" style="padding-top:50px; padding-bottom:0px; ">
+        <div class="section_wrapper clearfix">
+            <div class="items_group clearfix">
+                <!-- One full width row-->
+                <div class="column one column_column">
+                    <div class="column_attr align_center">
+                        <h2 style="font-weight: 400;">We <img style="position: relative; top: 4px;" src="{{ asset('asset3/images/home_animals_heart.png') }}" alt=""> Noah</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 @endsection

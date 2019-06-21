@@ -77,7 +77,7 @@
 											<li i>
                           <a href="/template3/movie"><span>MOVIE</span></a>
                       </li>
-											<li i>
+											<!-- <li i>
                           <a href="/template3/stor"><span>STORE</span></a>
                       </li>
 											<li i>
@@ -85,7 +85,7 @@
                       </li>
 											<li i>
                           <a href="/template3/link"><span>LINK</span></a>
-                      </li>
+                      </li> -->
                     </ul>
                   </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>
                 </div>
@@ -107,7 +107,7 @@
 	              <div id="rev_slider_1_2" class="rev_slider fullwidthabanner" data-version="5.0.4.1">
 	                  <ul>
 	                      <li data-index="rs-1" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="{{ asset('asset3/images/img/slider1.jpeg') }}" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
-	                          <img src="{{ asset('asset3/images/img/slider1.jpeg') }}" alt="" width="1880" height="880" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>   
+	                          <img src="{{ asset('asset3/images/img/slider1.jpeg') }}" alt="" width="1880" height="880" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
 	                      </li>
 	                      <li data-index="rs-2" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="{{ asset('asset3/images/img/slider2.jpg') }}" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
 	                          <img src="{{ asset('asset3/images/img/slider2.jpg') }}" alt="" width="1880" height="880" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>

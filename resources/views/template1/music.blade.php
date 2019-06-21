@@ -21,7 +21,7 @@
 				<div class="blog-item">
 					<div class="blog-image">
 						<img src="{{ env('API_PREFIX').$c->physical_path }}" alt="#">
-						<a class="tag">#movie</a>
+						<!-- <a class="tag">#music</a> -->
 					</div>
 
 					<div class="blog-content">

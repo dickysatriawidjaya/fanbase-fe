@@ -7,7 +7,30 @@
 	//  echo $web_banner;
 	?>
 	<section class="hero-section" style="background-image:url({{$web_banner}})">
+<<<<<<< HEAD
 
+=======
+		<div class="hero-slider owl-carousel">
+			<div class="hs-item">
+				<div class="container">
+					<span>UP NEXT</span>
+					<h2>DJ Khaled Exclusive Interview</h2>
+				</div>
+			</div>
+			<div class="hs-item">
+				<div class="container">
+					<span>UP NEXT</span>
+					<h2>David Guetta Exclusive Interview</h2>
+				</div>
+			</div>
+			<div class="hs-item">
+				<div class="container">
+					<span>UP NEXT</span>
+					<h2>Dj snake Exclusive Track</h2>
+				</div>
+			</div>
+		</div>
+>>>>>>> 0f1a4a4d906ddc2a131919b1157c240324e73a3c
 	</section>
 	<!-- Hero section end -->
 

@@ -7,49 +7,14 @@
       </div>
     </div>
     <!-- MUSIC LISTS -->
+    @foreach($data->foto as $c)
     <div class="music_box">
-      <img class="hero_image" src="{{ asset('assets2/images/music/1.jpg') }}"/>
+      <img class="hero_image" src="{{ env('API_PREFIX').$c->physical_path }}"/>
       <div class="category">
-        <p>Digital</p>
+        <p>Music</p>
       </div>
-      <a class="music_title" href="#">Kill This Love</a>
+      <a class="music_title"  href="/musicdetail/{{$c->id}}?title={{$c->title}}">{{$c->title}}</a>
     </div>
-    <!-- END MUSIC LISTS -->
-    <!-- MUSIC LISTS -->
-    <div class="music_box">
-      <img class="hero_image" src="{{ asset('assets2/images/music/2.png') }}"/>
-      <div class="category">
-        <p>Digital</p>
-      </div>
-      <a class="music_title" href="#">Kill This Love</a>
-    </div>
-    <!-- END MUSIC LISTS -->
-    <!-- MUSIC LISTS -->
-    <div class="music_box">
-      <img class="hero_image" src="{{ asset('assets2/images/music/3.jpg') }}"/>
-      <div class="category">
-        <p>Digital</p>
-      </div>
-      <a class="music_title" href="#">Kill This Love</a>
-    </div>
-    <!-- END MUSIC LISTS -->
-    <!-- MUSIC LISTS -->
-    <div class="music_box">
-      <img class="hero_image" src="{{ asset('assets2/images/music/4.jpg') }}"/>
-      <div class="category">
-        <p>Digital</p>
-      </div>
-      <a class="music_title" href="#">Kill This Love</a>
-    </div>
-    <!-- END MUSIC LISTS -->
-    <!-- MUSIC LISTS -->
-    <div class="music_box">
-      <img class="hero_image" src="{{ asset('assets2/images/music/5.jpg') }}"/>
-      <div class="category">
-        <p>Digital</p>
-      </div>
-      <a class="music_title" href="#">Kill This Love</a>
-    </div>
-    <!-- END MUSIC LISTS -->
+    @endforeach
   </div>
 @endsection

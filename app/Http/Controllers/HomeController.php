@@ -90,7 +90,7 @@
                   ->post();
       $data =  $response->message;
       // return dd($data);
-      return View::make('template'.$template_id.'/newsdetail')->with('data',$data)->render();
+      return View::make('template'.$template_id.'/livedetail')->with('data',$data)->render();
     }
 
     public function media(){
@@ -124,7 +124,7 @@
                   ->post();
       $data =  $response->message;
       // return dd($data);
-      return View::make('template'.$template_id.'/newsdetail')->with('data',$data)->render();
+      return View::make('template'.$template_id.'/mediadetail')->with('data',$data)->render();
     }
 
     public function music(){
@@ -210,15 +210,33 @@
     public function store()
     {
       $config = Config::get("global");
+      $api_key = $config['web_data']['api_key'];
+      $secret_key = $config['web_data']['secret_key'];
       $template_id = $config['web_data']['template'];
-      return View::make('template'.$template_id.'/store')->render();
+      $url =  env("API_URL");
+      $response = Curl::to($url.'get_data')
+                  ->withHeader('api_key:'.$api_key)
+                  ->withHeader('secret_key:'.$secret_key)
+                  ->asJson()
+                  ->post();
+      $data =  $response->message;
+      return View::make('template'.$template_id.'/store')->with('data',$data)->render();
     }
     public function lovers()
     {
       $config = Config::get("global");
+      $api_key = $config['web_data']['api_key'];
+      $secret_key = $config['web_data']['secret_key'];
       $template_id = $config['web_data']['template'];
+      $url =  env("API_URL");
+      $response = Curl::to($url.'get_data')
+                  ->withHeader('api_key:'.$api_key)
+                  ->withHeader('secret_key:'.$secret_key)
+                  ->asJson()
+                  ->post();
+      $data =  $response->message;
 
-      return View::make('template'.$template_id.'/lovers')->render();
+      return View::make('template'.$template_id.'/lovers')->with('data',$data)->render();
     }
     public function link()
     {

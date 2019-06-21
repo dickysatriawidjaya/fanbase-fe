@@ -2,7 +2,7 @@
 @section('content')
   <div class="head">
     <div class="hero">
-      <img class="hero_image" src="{{ asset('assets2/images/bp/news.jpg') }}"/>
+      <img class="hero_image" src="{{ env('API_PREFIX').$data->web_main_banner }}"/>
     </div>
   </div>
   <div class="content">
@@ -18,22 +18,24 @@
       </div>
     </div>
     <!-- LIVE LISTS -->
+    @foreach($data->content as $c)
     <div class="list_box_live">
       <div class="category">
-        <p>Event</p>
+        <p>{{$c->tag}}</p>
       </div>
-      <a class="live_a" href="#">
+      <a class="live_a" href="/livedetail/{{$c->id}}?title={{$c->title}}">
       <div class="list_title">
-       <h4> 5, Jul. 2019 (Fri) - 新木場STUDIO COAST</h4>
+       <h4>  {{$c->title}}</h4>
       </div>
       <div class="live_title">
-        <p>ESP学園presents COLORS2019</p>
+        <p>{{ date("d M Y", strtotime($c->created_at))}}</p>
       </div>
       </a>
     </div>
+    @endforeach
     <!-- END LIVE LISTS -->
     <!-- LIVE LISTS -->
-    <div class="list_box_live">
+    <!-- <div class="list_box_live">
       <div class="category">
         <p>Onegirl Live</p>
       </div>
@@ -45,7 +47,7 @@
         <p>ESP学園presents COLORS2019</p>
       </div>
       </a>
-    </div>
+    </div> -->
     <!-- END LIVE LISTS -->
   </div>
 @endsection

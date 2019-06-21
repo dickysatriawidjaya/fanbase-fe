@@ -11,7 +11,7 @@
 
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
-    <title>BlackPink - FanPage</title>
+    <title>{{$data->web_title}}</title>
     <meta name="description">
     <meta name="author">
 
@@ -46,44 +46,45 @@
             <div class="top_bar_left">
               <div class="logo">
                   <a id="logo" href="index-sciencecentre.html" title="BeScienceCentre - BeTheme" data-height="120" data-padding="40">
-                    <img class="logo-main scale-with-grid" src="{{ asset('assets2/images/scicentre-logo.png') }}" data-retina="{{ asset('assets2/images/scicentre-logo-retina.png') }}" data-height="50" alt="scicentre logo" >
-                    <img class="logo-sticky scale-with-grid" src="{{ asset('assets2/images/scicentre-logo.png') }}" data-retina="{{ asset('assets2/images/scicentre-logo-retina.png') }}" data-height="51" alt="scicentre logo" >
-                    <img class="logo-mobile scale-with-grid" src="{{ asset('assets2/images/scicentre-logo.png') }}" data-retina="{{ asset('assets2/images/scicentre-logo-retina.png') }}" data-height="51" alt="scicentre logo" >
-                    <img class="logo-mobile-sticky scale-with-grid" src="{{ asset('assets2/images/scicentre-logo.png') }}" data-retina="{{ asset('assets2/images/scicentre-logo-retina.png') }}" data-height="51" alt="scicentre logo" ></a>
+                    <img class="logo-main scale-with-grid" src="{{ env('API_PREFIX').$data->web_logo }}" data-retina="{{ env('API_PREFIX').$data->web_logo }}" data-height="50" alt="scicentre logo" >
+                    <img class="logo-sticky scale-with-grid" src="{{ env('API_PREFIX').$data->web_logo }}" data-retina="{{ env('API_PREFIX').$data->web_logo }}" data-height="51" alt="scicentre logo" >
+                    <img class="logo-mobile scale-with-grid" src="{{ env('API_PREFIX').$data->web_logo }}" data-retina="{{ env('API_PREFIX').$data->web_logo }}" data-height="51" alt="scicentre logo" >
+                    <img class="logo-mobile-sticky scale-with-grid" src="{{ env('API_PREFIX').$data->web_logo }}" data-retina="{{ env('API_PREFIX').$data->web_logo }}" data-height="51" alt="scicentre logo" >
+                  </a>
               </div>
               <div class="menu_wrapper">
                 <nav id="menu">
                   <ul id="menu-menu" class="menu menu-main">
                     <li class="">
-                      <a href="/template2"><span>Home</span></a>
+                      <a href="/"><span>Home</span></a>
                     </li>
                     <li>
-                      <a href="/template2/news"><span>News</span></a>
+                      <a href="/news"><span>News</span></a>
                     </li>
                     <li>
-                      <a href="/template2/live"><span>Live</span></a>
+                      <a href="/live"><span>Live</span></a>
                     </li>
                     <li>
-                      <a href="/template2/media"><span>Media</span></a>
+                      <a href="/media"><span>Media</span></a>
                     </li>
                     <li>
-                      <a href="/template2/music"><span>Music</span></a>
+                      <a href="/music"><span>Music</span></a>
                     </li>
                     <li>
-                      <a href="/template2/movie"><span>Movie</span></a>
+                      <a href="/movie"><span>Movie</span></a>
+                    </li>
+                    <!-- <li>
+                      <a href="/store"><span>Store</span></a>
                     </li>
                     <li>
-                      <a href="/template2/store"><span>Store</span></a>
-                    </li>
+                      <a href="/lovers"><span>Lovers</span></a>
+                    </li> -->
                     <li>
-                      <a href="/template2/lovers"><span>Lovers</span></a>
+                      <a href="/profile"><span>Profile</span></a>
                     </li>
-                    <li>
-                      <a href="/template2/profile"><span>Profile</span></a>
-                    </li>
-                    <li>
-                      <a href="/template2/link"><span>Link</span></a>
-                    </li>
+                    <!-- <li>
+                      <a href="/link"><span>Link</span></a>
+                    </li> -->
                     <!-- <li class="menu-item type-custom object-custom">
                       <a target="_blank" href="http://bit.ly/1M6lijQ"><span><span style="color:#2d1aff;"><strong>Buy now</strong></span></span></a>
                     </li> -->
@@ -97,10 +98,11 @@
     </div>
     <div id="Wrapper">
     @yield('content')
-    <footer id="Footer" class="clearfix">
+    <footer id="Footer" class="clearfix" >
       <div class="footer_copy">
         <div class="footer">
-          <div class="footerbox">
+        
+          <!-- <div class="footerbox">
             <a href="#">Terms of Use </a>
           </div>
           <div class="footerbox">
@@ -112,9 +114,9 @@
           <div class="footerbox">
             <a href="#">Display based on Specified</a>
           </div>
-        </div>
+        </div> -->
         <div class="copyright">
-            &copy; 2019 BlackPink FanPage
+        {{$data->web_footer}}
         </div>
       </div>
     </footer>
