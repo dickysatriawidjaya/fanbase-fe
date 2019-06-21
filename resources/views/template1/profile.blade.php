@@ -3,7 +3,7 @@
 
 
 	<!--  section -->
-	<section class="page-info-section set-bg" data-setbg="{{ asset('assets3/img/page-info-bg.jpg') }}">
+	<section class="page-info-section set-bg" data-setbg="{{ env('API_PREFIX').$data->web_main_banner }}">
 		<div class="container">
 			<div class="section-title text-center">
 				<h2>Profile</h2>
@@ -11,7 +11,6 @@
 		</div>
 	</section>
 	<!--  section end -->
-
 
 
 	<!--  About section -->

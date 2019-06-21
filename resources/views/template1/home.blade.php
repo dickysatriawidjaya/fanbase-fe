@@ -7,7 +7,6 @@
 	//  echo $web_banner;
 	?>
 	<section class="hero-section" style="background-image:url({{$web_banner}})">
-
 		<div class="hero-slider owl-carousel">
 			<div class="hs-item">
 				<div class="container">

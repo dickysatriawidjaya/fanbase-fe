@@ -2,7 +2,7 @@
 @section('content')
   <div class="head">
     <div class="hero">
-      <img class="hero_image" src="{{ asset('assets2/images/bp/news.jpg') }}"/>
+      <img class="hero_image" src="{{ env('API_PREFIX').$data->web_main_banner }}"/>
     </div>
   </div>
   <div class="content">
@@ -12,30 +12,19 @@
       </div>
     </div>
     <!-- MEDIA LISTS -->
+    @foreach($data->content as $c)
     <div class="list_box">
       <div class="category">
-        <p>Radio</p>
+        <p>{{$c->tag}}</p>
       </div>
       <div class="list_title">
-        <a class="news_title" href="#">FM OH!「Double-E」</a>
+        <a class="news_title" href="/mediadetail/{{$c->id}}?title={{$c->title}}">{{$c->title}}</a>
       </div>
       <div class="list_date">
-        <p>31, Mar. 2019</p>
+        <p>{{ date("d M Y", strtotime($c->created_at)) }}</p>
       </div>
     </div>
-    <!-- END MEDIA LISTS -->
-    <!-- MEDIA LISTS -->
-    <div class="list_box">
-      <div class="category">
-        <p>Radio</p>
-      </div>
-      <div class="list_title">
-        <a class="news_title" href="#">Fm yokohama「Sunset Breeze」</a>
-      </div>
-      <div class="list_date">
-        <p>31, June. 2019</p>
-      </div>
-    </div>
+    @endforeach
     <!-- END MEDIA LISTS -->
   </div>
 @endsection

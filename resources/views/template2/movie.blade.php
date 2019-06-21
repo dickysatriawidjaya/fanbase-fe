@@ -6,44 +6,19 @@
         <h3>Movie</h3>
       </div>
       <div class="btn_right">
-        <a class="btn" href="#">Category</a>
+        <!-- <a class="btn">Category</a> -->
       </div>
     </div>
     <!-- Movie LISTS -->
+    @foreach($data->video as $c)
     <div class="music_box">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/2S24-y0Ij3Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="{{$c->url}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <div class="category">
-        <p>Digital</p>
+        <p>Movie</p>
       </div>
-      <a class="music_title" href="#">Kill This Love</a>
+      <a class="music_title" href="/moviedetail/{{$c->id}}?title={{$c->title}}">{{$c->title}}</a>
     </div>
-    <!-- END Movie LISTS -->
-    <!-- Movie LISTS -->
-    <div class="music_box">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/IHNzOHi8sJs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <div class="category">
-        <p>Music video</p>
-      </div>
-      <a class="music_title" href="#">Kill This Love</a>
-    </div>
-    <!-- END Movie LISTS -->
-    <!-- Movie LISTS -->
-    <div class="music_box">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/dISNgvVpWlo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <div class="category">
-        <p>Music video</p>
-      </div>
-      <a class="music_title" href="#">Kill This Love</a>
-    </div>
-    <!-- END Movie LISTS -->
-    <!-- Movie LISTS -->
-    <div class="music_box">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Amq-qlqbjYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <div class="category">
-        <p>Music video</p>
-      </div>
-      <a class="music_title" href="#">Kill This Love</a>
-    </div>
+    @endforeach
     <!-- END Movie LISTS -->
   </div>
 @endsection
