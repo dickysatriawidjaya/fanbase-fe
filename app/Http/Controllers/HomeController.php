@@ -19,7 +19,6 @@
                   ->asJson()
                   ->post();
       $data =  $response->message;
-      // return dd($data);
       return View::make('template'.$template_id.'/home')->with('data',$data)->render();
     }
 
@@ -136,6 +135,7 @@
       $response = Curl::to($url.'get_data')
                   ->withHeader('api_key:'.$api_key)
                   ->withHeader('secret_key:'.$secret_key)
+                  ->withData(array('menu'=>"music"))
                   ->asJson()
                   ->post();
       $data =  $response->message;
@@ -168,6 +168,7 @@
       $response = Curl::to($url.'get_data')
                   ->withHeader('api_key:'.$api_key)
                   ->withHeader('secret_key:'.$secret_key)
+                  ->withData(array('menu'=>"video"))
                   ->asJson()
                   ->post();
       $data =  $response->message;
@@ -200,6 +201,7 @@
       $response = Curl::to($url.'get_data')
                   ->withHeader('api_key:'.$api_key)
                   ->withHeader('secret_key:'.$secret_key)
+                  ->withData(array('menu'=>"profile"))
                   ->asJson()
                   ->post();
       $data =  $response->message;

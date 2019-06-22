@@ -13,7 +13,6 @@
     <title>{{$data->web_title}}</title>
     <meta name="description" content="">
     <meta name="author" content="">
-
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -37,7 +36,7 @@
 
 </head>
 
-<body class="home page template-slider layout-full-width no-content-padding header-stack header-center sticky-dark subheader-both-center">
+<body data-font="{{$data->web_font}}" class="home page template-slider layout-full-width no-content-padding header-stack header-center sticky-dark subheader-both-center">
 	<!-- Main Theme Wrapper -->
 	<div id="Wrapper">
     <!-- Header Wrapper -->
@@ -259,7 +258,13 @@
                     var stickyLogoH = stickyEl.height();
                     stickyEl.attr("src", "{{ asset('asset3/images/img/logo.png') }}").width(stickyLogoW).height(stickyLogoH);
                 }
+                
             });
+                if(jQuery("body").attr("data-font")){
+                    let font = jQuery("body").attr("data-font")
+                   console.log(font)
+                   jQuery('body').css("font-family", font);
+                }
         </script>
 
     </body>

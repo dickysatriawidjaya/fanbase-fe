@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="{{mix('/css/template2.css')}}">
 </head>
 
-<body class="home page-template-default page color-custom style-simple button-flat layout-full-width if-zoom if-border-hide no-content-padding hide-love header-creative header-open minimalist-header-no ab-hide subheader-title-left menu-link-color footer-copy-center mobile-tb-center mobile-side-slide mobile-mini-mr-ll tablet-sticky mobile-header-mini mobile-sticky be-reg-211">
+<body data-font="{{$data->web_font}}" class="home page-template-default page color-custom style-simple button-flat layout-full-width if-zoom if-border-hide no-content-padding hide-love header-creative header-open minimalist-header-no ab-hide subheader-title-left menu-link-color footer-copy-center mobile-tb-center mobile-side-slide mobile-mini-mr-ll tablet-sticky mobile-header-mini mobile-sticky be-reg-211">
     <div id="Header_creative">
       <a href="#" class="creative-menu-toggle"><i class="icon-menu-fine"></i></a>
       <div class="creative-wrapper">
@@ -141,7 +141,13 @@
     <script src="{{ asset('assets2/js/animations/animations.js') }}"></script>
     <script src="{{ asset('assets2/js/translate3d.js') }}"></script>
     <script src="{{ asset('assets2/js/scripts.js') }}"></script>
-
+    <script>
+      if($("body").attr("data-font")){
+          let font = $("body").attr("data-font")
+          // alert(font)
+          $('body').css("font-family", font, "!important");
+      }
+    </script>
 </body>
 
 </html>

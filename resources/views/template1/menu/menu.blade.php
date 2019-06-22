@@ -23,7 +23,7 @@
 	<![endif]-->
 
 </head>
-<body>
+<body data-font = "{{$data->web_font}}">
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
@@ -111,11 +111,20 @@
 		var title = $(this).attr('data-title');
 		window.location.href = "/musicdetail/"+id+"?title="+title;
 	});
+
 	$( ".video_detail" ).click(function() {
 		var id = $(this).attr('data-id');
 		var title = $(this).attr('data-title');
 		window.location.href = "/moviedetail/"+id+"?title="+title;
 	});
+
+	if($("body").attr("data-font")){
+		let font = $("body").attr("data-font")
+		$('body').css("font-family", font);
+	}
+
+
+
 	</script>
 
     </body>
