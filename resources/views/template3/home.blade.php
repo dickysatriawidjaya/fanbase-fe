@@ -28,7 +28,7 @@
                                 <!-- One full width row-->
                                 <div class="column one column_column">
                                     <div class="column_attr align_center">
-                                        <h2>Fresh blogs and articles</h2>
+                                        <h2>{{$data->web_title}}</h2>
                                     </div>
                                 </div>
                                 <!-- One full width row-->
@@ -42,17 +42,17 @@
                                                 <div class="item_wrapper">
                                                     <div class="image_frame scale-with-grid">
                                                         <div class="image_wrapper">
-                                                            <a href="content/animals/article-4.html"><img width="576" height="450" src="{{ asset('asset3/images/img/2.jpg') }}" class="scale-with-grid wp-post-image" alt="home_animals_photo3" />
+                                                            <a href="/news"><img width="576" height="450" src="{{ asset('asset3/images/img/2.jpg') }}" class="scale-with-grid wp-post-image" alt="home_animals_photo3" />
                                                             </a>
                                                         </div>
                                                     </div>
-                                                    <div class="date_label">
+                                                    <!-- <div class="date_label">
                                                         May 9, 2014
-                                                    </div>
+                                                    </div> -->
                                                     <div class="desc">
-                                                        <h4><a href="content/animals/article-4.html">Our Profile</a></h4>
+                                                        <h4><a href="/news">News</a></h4>
                                                         <hr class="hr_color" />
-                                                        <a href="content/animals/article-4.html" class="button button_left button_js"><span class="button_icon"><i class="icon-layout"></i></span><span class="button_label">Read more</span></a>
+                                                        <!-- <a href="content/animals/article-4.html" class="button button_left button_js"><span class="button_icon"><i class="icon-layout"></i></span><span class="button_label">Read more</span></a> -->
                                                     </div>
                                                 </div>
                                             </li>
@@ -60,17 +60,17 @@
                                                 <div class="item_wrapper">
                                                     <div class="image_frame scale-with-grid">
                                                         <div class="image_wrapper">
-                                                            <a href="content/animals/article-5.html"><img width="576" height="450" src="{{ asset('asset3/images/img/2.jpg') }}" class="scale-with-grid wp-post-image" alt="home_animals_photo17" />
+                                                            <a href="/music"><img width="576" height="450" src="{{ asset('asset3/images/img/2.jpg') }}" class="scale-with-grid wp-post-image" alt="home_animals_photo17" />
                                                             </a>
                                                         </div>
                                                     </div>
-                                                    <div class="date_label">
+                                                    <!-- <div class="date_label">
                                                         May 8, 2014
-                                                    </div>
+                                                    </div> -->
                                                     <div class="desc">
                                                         <h4><a href="content/animals/article-5.html">Gallery</a></h4>
                                                         <hr class="hr_color" />
-                                                        <a href="content/animals/article-5.html" class="button button_left button_js"><span class="button_icon"><i class="icon-layout"></i></span><span class="button_label">Read more</span></a>
+                                                        <!-- <a href="content/animals/article-5.html" class="button button_left button_js"><span class="button_icon"><i class="icon-layout"></i></span><span class="button_label">Read more</span></a> -->
                                                     </div>
                                                 </div>
                                             </li>
@@ -78,71 +78,17 @@
                                                 <div class="item_wrapper">
                                                     <div class="image_frame scale-with-grid">
                                                         <div class="image_wrapper">
-                                                            <a href="content/animals/article-6.html"><img width="576" height="450" src="{{ asset('asset3/images/img/2.jpg') }}" class="scale-with-grid wp-post-image" alt="home_animals_photo5" />
+                                                            <a href="/live"><img width="576" height="450" src="{{ asset('asset3/images/img/2.jpg') }}" class="scale-with-grid wp-post-image" alt="home_animals_photo5" />
                                                             </a>
                                                         </div>
                                                     </div>
-                                                    <div class="date_label">
+                                                    <!-- <div class="date_label">
                                                         May 7, 2014
-                                                    </div>
+                                                    </div> -->
                                                     <div class="desc">
-                                                        <h4><a href="content/animals/article-6.html">LIVE</a></h4>
+                                                        <h4><a href="/live">LIVE</a></h4>
                                                         <hr class="hr_color" />
-                                                        <a href="content/animals/article-6.html" class="button button_left button_js"><span class="button_icon"><i class="icon-layout"></i></span><span class="button_label">Read more</span></a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="post-2281 post  format-standard has-post-thumbnail  ">
-                                                <div class="item_wrapper">
-                                                    <div class="image_frame scale-with-grid">
-                                                        <div class="image_wrapper">
-                                                            <a href="content/animals/article-4.html"><img width="576" height="450" src="{{ asset('asset3/images/img/2.jpg') }}" class="scale-with-grid wp-post-image" alt="home_animals_photo16" />
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="date_label">
-                                                        May 6, 2014
-                                                    </div>
-                                                    <div class="desc">
-                                                        <h4><a href="content/animals/article-4.html">Vivamus sit amet metus sem imperdiet</a></h4>
-                                                        <hr class="hr_color" />
-                                                        <a href="content/animals/article-4.html" class="button button_left button_js"><span class="button_icon"><i class="icon-layout"></i></span><span class="button_label">Read more</span></a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="post-2283 post  format-standard has-post-thumbnail  category-subjects tag-design">
-                                                <div class="item_wrapper">
-                                                    <div class="image_frame scale-with-grid">
-                                                        <div class="image_wrapper">
-                                                            <a href="content/animals/article-3.html"><img width="576" height="450" src="{{ asset('asset3/images/img/2.jpg') }}" class="scale-with-grid wp-post-image" alt="home_animals_photo5" />
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="date_label">
-                                                        May 5, 2014
-                                                    </div>
-                                                    <div class="desc">
-                                                        <h4><a href="content/animals/article-3.html">Pellentes malesuada fames</a></h4>
-                                                        <hr class="hr_color" />
-                                                        <a href="content/animals/article-3.html" class="button button_left button_js"><span class="button_icon"><i class="icon-layout"></i></span><span class="button_label">Read more</span></a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="post-2285 post  format-standard has-post-thumbnail  category-subjects ">
-                                                <div class="item_wrapper">
-                                                    <div class="image_frame scale-with-grid">
-                                                        <div class="image_wrapper">
-                                                            <a href="content/animals/article-2.html"><img width="576" height="450" src="{{ asset('asset3/images/img/2.jpg') }}" class="scale-with-grid wp-post-image" alt="home_animals_photo9" />
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="date_label">
-                                                        May 4, 2014
-                                                    </div>
-                                                    <div class="desc">
-                                                        <h4><a href="content/animals/article-2.html">Aenean ligula mol stie viver</a></h4>
-                                                        <hr class="hr_color" />
-                                                        <a href="content/animals/article-2.html" class="button button_left button_js"><span class="button_icon"><i class="icon-layout"></i></span><span class="button_label">Read more</span></a>
+                                                        <!-- <a href="content/animals/article-6.html" class="button button_left button_js"><span class="button_icon"><i class="icon-layout"></i></span><span class="button_label">Read more</span></a> -->
                                                     </div>
                                                 </div>
                                             </li>
@@ -157,11 +103,11 @@
                         <div class="section_wrapper clearfix">
                             <div class="items_group clearfix">
                                 <!-- One full width row-->
-                                <div class="column one column_column">
+                                <!-- <div class="column one column_column">
                                     <div class="column_attr align_center">
                                         <h2 style="font-weight: 400;">We <img style="position: relative; top: 4px;" src="{{ asset('asset3/images/home_animals_heart.png') }}" alt=""> Noah</h2>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>

@@ -8,10 +8,9 @@
 <!--<![endif]-->
 
 <head>
-
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
-    <title>Be</title>
+    <title>{{$data->web_title}}</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -53,29 +52,29 @@
               <div class="top_bar_left clearfix">
                 <!-- Logo-->
                 <div class="logo">
-                  <h1><a id="logo" href="/template3" title="Noah"><img class="logo-main scale-with-grid" src="{{ asset('asset3/images/img/logo.png') }}" 	alt="BeAnimals - BeTheme" /> </a></h1>
+                  <h1><a id="logo" href="/" title="Noah"><img class="logo-main scale-with-grid" src="{{ env('API_PREFIX').$data->web_logo }}"  alt="BeAnimals - BeTheme" /> </a></h1>
                 </div>
                 <!-- Main menu-->
                 <div class="menu_wrapper">
                   <nav id="menu">
                     <ul id="menu-main-menu" class="menu">
                       <li class="current_page_item">
-                          <a href="/template3"><span>HOME</span></a>
+                          <a href=""><span>HOME</span></a>
                       </li>
                       <li>
-                          <a href="/template3/news"><span>NEWS</span></a>
+                          <a href="/news"><span>NEWS</span></a>
                       </li>
                       <li>
-                          <a href="/template3/live"><span>LIVE</span></a>
+                          <a href="/live"><span>LIVE</span></a>
                       </li>
                       <li i>
-                          <a href="/template3/media"><span>MEDIA</span></a>
+                          <a href="/media"><span>MEDIA</span></a>
                       </li>
 											<li i>
-                          <a href="/template3/music"><span>MUSIC</span></a>
+                          <a href="/music"><span>MUSIC</span></a>
                       </li>
 											<li i>
-                          <a href="/template3/movie"><span>MOVIE</span></a>
+                          <a href="/movie"><span>MOVIE</span></a>
                       </li>
 											<!-- <li i>
                           <a href="/template3/stor"><span>STORE</span></a>
@@ -129,9 +128,9 @@
                       <div class="column one">
                           <a id="back_to_top" href="#" class="button button_left button_js"><span class="button_icon"><i class="icon-up-open-big"></i></span></a>
                           <div class="copyright">
-                              &copy; 2017 BeAnimals - BeTheme. Muffin group - HTML by <a target="_blank" rel="nofollow" href="http://bit.ly/1M6lijQ">BeantownThemes</a>
+                          {{$data->web_footer}}
                           </div>
-                          <nav id="social-menu">
+                          <!-- <nav id="social-menu">
                               <ul id="menu-main-menu-1" class="social-menu">
                                   <li>
                                       <a href="index-animals.html">HOME</a>
@@ -146,7 +145,7 @@
                                       <a href="content/animals/who-we-are.html">WHO WE ARE</a>
                                   </li>
                               </ul>
-                          </nav>
+                          </nav> -->
                       </div>
                   </div>
               </div>
