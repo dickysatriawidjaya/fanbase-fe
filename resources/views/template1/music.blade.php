@@ -28,7 +28,7 @@
 						<div class="date">{{ date("d M Y", strtotime($c->created_at)) }}</div>
 						<h4>{{$c->title}}</h4>
 						<p>{{$c->description}}</p>
-						<button class="site-btn btn_login" >Download</button>
+						
 						<!-- Trigger/Open The Modal -->
 						<!-- The Modal -->
 						<div  class="modal modal_login">
