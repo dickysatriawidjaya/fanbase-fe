@@ -48,10 +48,10 @@
 				<li><a href="/media">Media</a></li>
 				<li><a href="/music">Music</a></li>
 				<li><a href="/movie">Movie</a></li>
-				<li><a href="/store">Store</a></li>
-				<li><a href="/lovers">Lovers</a></li>
+				<!-- <li><a href="/store">Store</a></li>
+				<li><a href="/lovers">Lovers</a></li> -->
 				<li><a href="/profile">Profile</a></li>
-				<li><a href="/link">Link</a></li>
+				<!-- <li><a href="/link">Link</a></li> -->
 			</ul>
 			<!-- Social Links -->
 			<!-- <div class="header-social-links">

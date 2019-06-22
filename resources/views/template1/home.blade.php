@@ -7,9 +7,7 @@
 	//  echo $web_banner;
 	?>
 	<section class="hero-section" style="background-image:url({{$web_banner}})">
-<<<<<<< HEAD
 
-=======
 		<div class="hero-slider owl-carousel">
 			<div class="hs-item">
 				<div class="container">
@@ -30,7 +28,6 @@
 				</div>
 			</div>
 		</div>
->>>>>>> 0f1a4a4d906ddc2a131919b1157c240324e73a3c
 	</section>
 	<!-- Hero section end -->
 
@@ -40,23 +37,23 @@
 		<div class="container">
 			<div class="row">
 					<div class="col-md-4">
-						<a href="/profile">
+						<a href="/music">
 							<div class="promo-box set-bg" data-setbg="{{ asset('assets3/img/promo/1.jpg') }}">
-								<h2>Our Profile</h2>
+								<h2>Music</h2>
 							</div>
 						</a>
 					</div>
 				<div class="col-md-4">
-					<a href="/live">
+					<a href="/movie">
 						<div class="promo-box set-bg" data-setbg="{{ asset('assets3/img/promo/2.jpg') }}">
-							<h2>Our Activities</h2>
+							<h2>Movie</h2>
 						</div>
 					</a>
 				</div>
 				<div class="col-md-4">
-					<a href="/music">
+					<a href="/media">
 						<div class="promo-box set-bg" data-setbg="{{ asset('assets3/img/promo/3.jpg') }}">
-							<h2>Our Albums</h2>
+							<h2>Media</h2>
 						</div>
 					</a>
 				</div>
