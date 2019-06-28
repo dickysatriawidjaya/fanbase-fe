@@ -26,7 +26,7 @@
                     <div class="section_wrapper clearfix">
                         <div class="items_group clearfix">
                             <!-- One full width row-->
-                           
+
                         </div>
                     </div>
                 </div>
@@ -43,19 +43,19 @@
                             <div class="column one column_column">
                                 <div class="column_attr ">
                                     <!-- Image Gallery-->
-                                    <div id='gallery-1' class='gallery galleryid-2301 gallery-columns-3 gallery-size-thumbnail '>
+                                    <div id='gallery-1' class='gallery'>
                                         <!-- Gallery item -->
                                         @foreach($data->content as $c)
-                                          <a class="hover" href='/livedetail/{{$c->id}}'>
                                             <dl class='gallery-item'>
+                                              <a class="hover" href='/livedetail/{{$c->id}}'>
                                                 <dt class='gallery-icon landscape'>
                                                 <img width="300" height="300" src="{{ env('API_PREFIX').$c->image_banner }}" class="attachment-thumbnail" alt="home_animals_photo14" />
                                                 <h4>{{$c->title}}</h4>
                                                 <p>{{ date("d M Y", strtotime($c->created_at))}}</p>
                                                 </dt>
                                                 <dd></dd>
+                                              </a>
                                             </dl>
-                                          </a>
                                         @endforeach
                                         <br class="flv_clear_both" />
                                     </div>
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="section the_content no_content">
                     <div class="section_wrapper">
                         <div class="the_content_wrapper"></div>

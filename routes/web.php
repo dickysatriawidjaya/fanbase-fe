@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/home1','HomeController@index');
+Route::get('/','HomeController@index');
 // template1
 Route::get('/template1','Template1Controller@index');
 Route::get('/news','HomeController@news');
@@ -42,14 +42,6 @@ Route::get('/template2/lovers','Template2Controller@lovers');
 Route::get('/template2/profile','Template2Controller@profile');
 Route::get('/template2/link','Template2Controller@link');
 Route::get('/template2/detail/detail','Template2Controller@detail');
-
-// template2
-Route::get('/','HomeController@index');
-Route::get('/promo','PromoController@index');
-Route::get('/galpubg','GalleryController@galpubg');
-Route::get('/galapex','GalleryController@galapex');
-Route::get('/newslist','NewsListController@index');
-// Route::get('/news','NewsListController@news');
 
 // template3
 Route::get('/template3','Template3Controller@index');

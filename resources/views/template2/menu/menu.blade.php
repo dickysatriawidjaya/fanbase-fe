@@ -26,26 +26,27 @@
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Patua+One:100,300,400,400italic,700'>
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:1,300,400,400italic,500,600,700,900|Montserrat:1,300,400,400italic,500,600,700,900'>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="{{mix('/css/template2.css')}}">
     <link rel='stylesheet' href='{{ asset('assets2/css/global.css') }}'>
     <link rel='stylesheet' href='{{ asset('assets2/css/structure.css') }}'>
     <link rel='stylesheet' href='{{ asset('assets2/css/sciencecentre.css') }}'>
     <link rel='stylesheet' href='{{ asset('assets2/css/custom.css') }}'>
-    <link rel="stylesheet" href="{{mix('/css/template2.css')}}">
+
 </head>
 
 <body data-font="{{$data->web_font}}" class="home page-template-default page color-custom style-simple button-flat layout-full-width if-zoom if-border-hide no-content-padding hide-love header-creative header-open minimalist-header-no ab-hide subheader-title-left menu-link-color footer-copy-center mobile-tb-center mobile-side-slide mobile-mini-mr-ll tablet-sticky mobile-header-mini mobile-sticky be-reg-211">
     <div id="Header_creative">
-      <a href="#" class="creative-menu-toggle"><i class="icon-menu-fine"></i></a>
+      <a href="#" class="creative-menu-toggle"><i class="fa fa-align-justify"></i></a>
       <div class="creative-wrapper">
 
         <div id="Top_bar">
           <div class="one clearfix">
             <div class="top_bar_left">
               <div class="logo">
-                  <a id="logo" href="index-sciencecentre.html" title="BeScienceCentre - BeTheme" data-height="120" data-padding="40">
+                  <a id="logo" href="/" title="BeScienceCentre - BeTheme" data-height="120" data-padding="40">
                     <img class="logo-main scale-with-grid" src="{{ env('API_PREFIX').$data->web_logo }}" data-retina="{{ env('API_PREFIX').$data->web_logo }}" data-height="50" alt="scicentre logo" >
                     <img class="logo-sticky scale-with-grid" src="{{ env('API_PREFIX').$data->web_logo }}" data-retina="{{ env('API_PREFIX').$data->web_logo }}" data-height="51" alt="scicentre logo" >
                     <img class="logo-mobile scale-with-grid" src="{{ env('API_PREFIX').$data->web_logo }}" data-retina="{{ env('API_PREFIX').$data->web_logo }}" data-height="51" alt="scicentre logo" >
@@ -56,22 +57,22 @@
                 <nav id="menu">
                   <ul id="menu-menu" class="menu menu-main">
                     <li class="">
-                      <a href="/"><span>Home</span></a>
+                      <a href="/"><i class="fa fa-home"></i> <span>Home</span></a>
                     </li>
                     <li>
-                      <a href="/news"><span>News</span></a>
+                      <a href="/news"><i class="fa fa-newspaper-o"></i> <span>News</span></a>
                     </li>
                     <li>
-                      <a href="/live"><span>Live</span></a>
+                      <a href="/live"><i class="fa fa-rss"></i> <span>Live</span></a>
                     </li>
                     <li>
-                      <a href="/media"><span>Media</span></a>
+                      <a href="/media"><i class="fa fa-photo"></i> <span>Media</span></a>
                     </li>
                     <li>
-                      <a href="/music"><span>Music</span></a>
+                      <a href="/music"><i class="fa fa-music"></i> <span>Music</span></a>
                     </li>
                     <li>
-                      <a href="/movie"><span>Movie</span></a>
+                      <a href="/movie"><i class="	fa fa-television"></i> <span>Movie</span></a>
                     </li>
                     <!-- <li>
                       <a href="/store"><span>Store</span></a>
@@ -80,7 +81,7 @@
                       <a href="/lovers"><span>Lovers</span></a>
                     </li> -->
                     <li>
-                      <a href="/profile"><span>Profile</span></a>
+                      <a href="/profile"><i class="	fa fa-user-o"></i> <span>Profile</span></a>
                     </li>
                     <!-- <li>
                       <a href="/link"><span>Link</span></a>
@@ -89,7 +90,7 @@
                       <a target="_blank" href="http://bit.ly/1M6lijQ"><span><span style="color:#2d1aff;"><strong>Buy now</strong></span></span></a>
                     </li> -->
                   </ul>
-                </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
+                </nav><a class="responsive-menu-toggle" href="#"><i class="fa fa-align-justify"></i></a>
               </div>
             </div>
           </div>
@@ -101,7 +102,7 @@
     <footer id="Footer" class="clearfix" >
       <div class="footer_copy">
         <div class="footer">
-        
+
           <!-- <div class="footerbox">
             <a href="#">Terms of Use </a>
           </div>
@@ -123,7 +124,7 @@
 </div>
     <div id="Side_slide" class="right dark" data-width="250">
         <div class="close-wrapper">
-            <a href="#" class="close"><i class="icon-cancel-fine"></i></a>
+            <a href="#" class="close"><i class="fa fa-angle-double-left"></i></a>
         </div>
         <div class="extras">
             <div class="extras-wrapper"></div>

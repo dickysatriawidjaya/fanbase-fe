@@ -283,11 +283,18 @@ body:not(.template-slider) #Content {
 
 /* #Clearing
 ================================================== */
-#gallery-1 img:hover{
-	border: 1px solid yellow !important;
-  outline: 1px solid red;
-  outline-offset: 15px !important;
+#gallery-1 {
+  width: 80%;
 }
+#gallery-1 a{
+  width: 100%;
+  float: left;
+}
+/* #gallery-1 img:hover{
+	border: 1px solid yellow !important;
+  outline-offset: 15px !important;
+
+} */
 
 /* Self Clearing Goodness */
 
@@ -1036,6 +1043,12 @@ body.nice-scroll:not(.layout-boxed) {
 	z-index: 2;
 }
 @media only screen and (max-width: 767px) {
+  #gallery-1 .gallery-item {
+    float: left;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
 	.box_movie{
 		width: 33%;
 		float: left;
@@ -5965,6 +5978,7 @@ body {
 	.post-header .title_wrapper {
 		margin-left: 69px;
 		padding-left: 20px;
+    margin-top: 20px;
 	}
 	.post-header .title_wrapper h1 {
 		font-size: 27px;
@@ -5980,6 +5994,9 @@ body {
 	.single-photo-wrapper .image_frame {
 		margin-left: 0;
 	}
+  .single-photo-wrapper .image_frame {
+    width: 100%;
+}
 	/* Post nav */
 	.post-nav {
 		padding: 10px 10px 4px 90px;
@@ -6431,6 +6448,23 @@ body {
 ===================================================================================================== */
 
 @media only screen and (max-width: 479px) {
+  .blog_slider .blog_slider_ul li .item_wrapper .image_frame {
+    margin-left: -13px;
+    margin-bottom: 17px;
+    min-height: 38px;
+}
+.blog_slider .slider_pagination {
+    margin-top: 4px;
+    margin-left: 6%;
+}
+  .post-wrapper-content .sosmed {
+    padding-left: 35% !important;
+    font-size: 20px !important;
+}
+  #gallery-1 .gallery-item {
+    float: left;
+    width: 100% !important;
+}
 	#Top_bar a.button.action_button {
 		margin-right: 0;
 	}

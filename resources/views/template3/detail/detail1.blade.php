@@ -15,7 +15,7 @@
                                 <a href="#" class="mfn-love " data-id="2275"><span class="icons-wrapper"><i class="icon-heart-empty-fa"></i><i class="icon-heart-fa"></i></span><span class="label">65</span></a>
                             </div>
                             <div class="title_wrapper">
-                                <h1 class="entry-title">Proin dui sodales imperdi sit sapien fames ac luctus</h1>
+                                <h1 class="entry-title">{{ $c->title }}</h1>
                                 <div class="post-meta clearfix">
                                     <div class="author-date">
                                         <span class="vcard author post-author"> Published by <i class="icon-user"></i> <span class="fn"><a href="#">admin</a></span> </span><span class="date"> at <i class="icon-clock"></i>

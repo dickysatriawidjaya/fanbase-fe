@@ -15908,7 +15908,7 @@ body.mobile-side-slide {
 	margin: 13px 13px 0 0
 }
 #Side_slide .close-wrapper a.close i {
-	font-size: 22px;
+	font-size: 37px;
 	line-height: 34px;
 }
 #Side_slide .extras {
@@ -15973,12 +15973,13 @@ body.mobile-side-slide {
 	border-bottom: 1px solid rgba(255, 255, 255, .03)
 }
 #Side_slide #menu ul li a {
-	    background: black;
+	background: black;
 	display: block;
 	padding: 11px 5px 10px 20px;
 	margin-right: 50px;
 	text-decoration: none;
-	line-height: 19px
+	line-height: 30px;
+	font-size: 20px;
 }
 #Side_slide #menu ul li a .menu-arrow {
 	display: none

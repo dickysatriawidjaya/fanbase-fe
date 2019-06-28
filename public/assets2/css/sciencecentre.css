@@ -1374,8 +1374,8 @@ a.action_button {
 	background: transparent;
 }
 #Side_slide {
-	background-color: #070619;
-	border-color: #070619;
+	background-color: black;
+	border-color: black;
 }
 #Side_slide, #Side_slide .search-wrapper input.field, #Side_slide a:not(.action_button), #Side_slide #menu ul li.submenu .menu-toggle {
 	color: #ffffff;
@@ -1968,6 +1968,405 @@ h6 {
 		font-size: 13px;
 		line-height: 19px;
 		letter-spacing: 0px;
+	}
+	/* HOME */
+	.content .box img {
+    width: 100%;
+    max-height: 123px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    top: 0px;
+	}
+	.content .box {
+    width: 20%;
+    float: left;
+    padding: 0px 8px;
+	}
+	.content .box p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+	}
+	.footer-copy-center #Footer .footer_copy .copyright {
+    float: none;
+    margin: 5px 0 5px 0;
+    color: white;
+	}
+	/*END HOME */
+	/* NEWS */
+	.content .titlebox .btn_right a.btn {
+    background: #FFF;
+    color: #000;
+    border: #000 solid 1px;
+    padding: 3px 8px 5px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 20px;
+		float: left;
+	}
+	.content .titlebox .title {
+    width: 50%;
+    float: left;
+	}
+	.content .list_box .category p {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    color: black;
+    background: white;
+    padding: 0px 4px 0px 4px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid black;
+		margin-left: 10px;
+	}
+	.content .list_box .list_title a.news_title {
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 500;
+    color: black;
+    margin-left: 0px;
+	}
+	.content .list_box .list_title {
+	    float: left;
+	    width: 80%;
+	    padding-left: 2%;
+	}
+	.content .list_box .list_date {
+    float: left;
+    width: 100%;
+    padding-top: 0px;
+		margin-left: 10px;
+	}
+	.content .profile_box p {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: black;
+	}
+	/* END NEWS */
+	/* LIVE */
+	.content .list_box_live a.live_a .list_title h4 {
+	    font-size: 20px;
+	    line-height: 29px;
+	    font-weight: 500;
+	    color: black;
+	}
+	.content .list_box_live a.live_a .live_title p {
+    font-size: 14px;
+    line-height: 7px;
+    font-weight: 400;
+    color: black;
+		margin-left: 10px;
+	}
+	.content .list_box_live .category p {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    color: black;
+    background: white;
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
+    border: 1px solid;
+    text-decoration: none;
+		margin-left: 10px;
+	}
+	/* END LIVE */
+	/* MUSIC */
+	.content .music_box {
+    width: 47%;
+    padding: 1.5%;
+    float: left;
+    margin-bottom: 0%;
+	}
+	.content .music_box a.music_title {
+    font-size: 1rem;
+    line-height: 22px;
+    font-weight: 400;
+    color: black;
+    margin-left: 3%;
+	}
+	.content .music_box .category p {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    color: white;
+    background: black;
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    word-wrap: break-word;
+	}
+	/* END MUSIC */
+
+	.sosmed{
+		font-size: 14px;
+	}
+	.sosmed a{
+		margin: 0 5px;
+	}
+	.sosmed i{
+		margin: 5px;
+	}
+	.big {
+		font-size: 13px;
+		line-height: 19px;
+		letter-spacing: 0px;
+	}
+	#menu>ul>li>a, a.action_button, #overlay-menu ul li a {
+		font-size: 13px;
+		letter-spacing: 0px;
+	}
+	#overlay-menu ul li a {
+		line-height: 19.5px;
+		letter-spacing: 0px;
+	}
+	#Subheader .title {
+		font-size: 48px;
+		line-height: 48px;
+		letter-spacing: 0px;
+	}
+	h1, .text-logo #logo {
+		font-size: 66px;
+		line-height: 60px;
+		letter-spacing: 0px;
+	}
+	h2 {
+		font-size: 19px;
+		line-height: 20px;
+		letter-spacing: 0px;
+	}
+	h3 {
+		font-size: 17px;
+		line-height: 19px;
+		letter-spacing: 0px;
+	}
+	h4 {
+		font-size: 13px;
+		line-height: 19px;
+		letter-spacing: 0px;
+	}
+	h5 {
+		font-size: 13px;
+		line-height: 19px;
+		letter-spacing: 2px;
+	}
+	h6 {
+		font-size: 22px;
+		line-height: 25px;
+		letter-spacing: 0px;
+	}
+	#Intro .intro-title {
+		font-size: 42px;
+		line-height: 42px;
+		letter-spacing: 0px;
+	}
+	blockquote {
+		font-size: 13px;
+	}
+	.chart_box .chart .num {
+		font-size: 35px;
+		line-height: 35px;
+	}
+	.counter .desc_wrapper .number-wrapper {
+		font-size: 35px;
+		line-height: 35px;
+	}
+	.counter .desc_wrapper .title {
+		font-size: 13px;
+		line-height: 26px;
+	}
+	.faq .question .title {
+		font-size: 13px;
+	}
+	.fancy_heading .title {
+		font-size: 30px;
+		line-height: 30px;
+	}
+	.offer .offer_li .desc_wrapper .title h3 {
+		font-size: 26px;
+		line-height: 26px;
+	}
+	.offer_thumb_ul li.offer_thumb_li .desc_wrapper .title h3 {
+		font-size: 26px;
+		line-height: 26px;
+	}
+	.pricing-box .plan-header h2 {
+		font-size: 21px;
+		line-height: 21px;
+	}
+	.pricing-box .plan-header .price>span {
+		font-size: 32px;
+		line-height: 32px;
+	}
+	.pricing-box .plan-header .price sup.currency {
+		font-size: 14px;
+		line-height: 14px;
+	}
+	.pricing-box .plan-header .price sup.period {
+		font-size: 13px;
+		line-height: 13px;
+	}
+	.quick_fact .number {
+		font-size: 60px;
+		line-height: 60px;
+	}
+	.trailer_box .desc h2 {
+		font-size: 21px;
+		line-height: 21px;
+	}
+	.widget>h3 {
+		font-size: 15px;
+		line-height: 18px;
+	}
+}
+@media only screen and (max-width: 568px) {
+	#Top_bar a.responsive-menu-toggle i {
+		font-size: 24px;
+		line-height: 35px;
+	}
+	/* HOME */
+	.content .box img {
+    width: 100%;
+    max-height: 200px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    top: 0px;
+	}
+	.content .box {
+    width: 44%;
+    float: left;
+    padding: 0px 8px;
+	}
+	.content .box p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+	}
+	.footer-copy-center #Footer .footer_copy .copyright {
+    float: none;
+    margin: 5px 0 5px 0;
+    color: white;
+	}
+	/*END HOME */
+	/* NEWS */
+	.content .titlebox .btn_right a.btn {
+    background: #FFF;
+    color: #000;
+    border: #000 solid 1px;
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+		float: left;
+	}
+	.content .titlebox .title {
+    width: 40%;
+    float: left;
+	}
+	.content .list_box .category p {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    color: black;
+    background: white;
+    padding: 0px 4px 0px 4px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid black;
+		margin-left: 10px;
+	}
+	.content .list_box .list_title a.news_title {
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 500;
+    color: black;
+    margin-left: 0px;
+	}
+	.content .list_box .list_title {
+	    float: left;
+	    width: 77%;
+	    padding-left: 2%;
+	}
+	.content .list_box .list_date {
+    float: left;
+    width: 100%;
+    padding-top: 0px;
+		margin-left: 10px;
+	}
+	.content .profile_box p {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: black;
+	}
+	/* END NEWS */
+	/* LIVE */
+	.content .list_box_live a.live_a .list_title h4 {
+	    font-size: 20px;
+	    line-height: 29px;
+	    font-weight: 500;
+	    color: black;
+	}
+	.content .list_box_live a.live_a .live_title p {
+    font-size: 14px;
+    line-height: 7px;
+    font-weight: 400;
+    color: black;
+		margin-left: 10px;
+	}
+	.content .list_box_live .category p {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    color: black;
+    background: white;
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
+    border: 1px solid;
+    text-decoration: none;
+		margin-left: 10px;
+	}
+	/* END LIVE */
+	/* MUSIC */
+	.content .music_box {
+    width: 47%;
+    padding: 1.5%;
+    float: left;
+    margin-bottom: 0%;
+	}
+	.content .music_box a.music_title {
+    font-size: 1rem;
+    line-height: 22px;
+    font-weight: 400;
+    color: black;
+    margin-left: 3%;
+	}
+	.content .music_box .category p {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    color: white;
+    background: black;
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    word-wrap: break-word;
+	}
+	/* END MUSIC */
+
+	.sosmed{
+		font-size: 14px;
+	}
+	.sosmed a{
+		margin: 0 5px;
+	}
+	.sosmed i{
+		margin: 5px;
 	}
 	.big {
 		font-size: 13px;
