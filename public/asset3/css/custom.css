@@ -1,0 +1,27 @@
+.post-wrapper-content{
+  width: 100%;
+}
+.the_content_wrapper h1{
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+  padding-left: 10px;
+}
+.the_content_wrapper p{
+  font-size: 15px;
+  color: black;
+  font-weight: 400;
+  padding-left: 10px;
+}
+.post-wrapper-content .sosmed{
+  width: 100%;
+  padding-left: 40%;
+  font-size: 30px;
+  margin: 5% 0;
+}
+.post-wrapper-content .sosmed i{
+  margin: 5px 2%;
+}
+.desc{
+  text-align: center;
+}

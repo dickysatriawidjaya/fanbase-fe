@@ -37,7 +37,7 @@
                                     <div class="posts_group lm_wrapper classic">
                                     @foreach($data->content as $c)
                                         <div class="post-2275 post  format-standard has-post-thumbnail   tag-grid  post-item isotope-item clearfix">
-                                            
+
                                             <div class="image_frame post-photo-wrapper scale-with-grid">
                                                 <div class="image_wrapper">
                                                     <a href="/newsdetail/{{$c->id}}?title={{$c->title}}">
@@ -53,7 +53,7 @@
                                                     <div class="post-meta clearfix">
                                                         <div class="author-date">
                                                             <span class="vcard author post-author">
-                                                                <span class="label">{{$c->tag}} 
+                                                                <span class="label">{{$c->tag}}
                                                         {{ date("d M Y", strtotime($c->created_at)) }}</span>
                                                             </span>
                                                         </div>
@@ -62,13 +62,14 @@
                                                         </div>
                                                     </div>
                                                     <div class="post-title">
-                                                        <h2 class="entry-title"><a href="/template3/detail/detail1">{{ $c->title }}</a></h2>
+                                                        <h2 class="entry-title"><a href="/newsdetail/{{$c->id}}">{{ $c->title }}</a></h2>
                                                     </div>
                                                     <div class="post-excerpt">
                                                         <p class="big">
                                                         {{ str_limit($c->content,30,"...") }}
                                                         </p>
                                                     </div>
+                                                    
                                                 </div>
                                             </div>
                                         </div>

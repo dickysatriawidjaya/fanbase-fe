@@ -17888,7 +17888,8 @@ body.nice-scroll:not(.layout-boxed) {
 	float: left
 }
 .single-photo-wrapper .image_frame {
-	margin-left: 120px
+	margin-left: 120px;
+	width: 69%
 }
 .single-photo-wrapper .image_frame iframe {
 	width: 100%

@@ -24,7 +24,7 @@
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Raleway:100,300,400,400italic,500,700,800,900'>
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Alegreya:100,300,400,400italic,500,700,800,900'>
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Patua+One:100,300,400,400italic,700'>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- CSS -->
     <link rel='stylesheet' href='{{ asset('asset3/css/global.css') }}'>
     <link rel='stylesheet' href='{{ asset('asset3/css/structure.css') }}'>
@@ -258,7 +258,7 @@
                     var stickyLogoH = stickyEl.height();
                     stickyEl.attr("src", "{{ asset('asset3/images/img/logo.png') }}").width(stickyLogoW).height(stickyLogoH);
                 }
-                
+
             });
                 if(jQuery("body").attr("data-font")){
                     let font = jQuery("body").attr("data-font")

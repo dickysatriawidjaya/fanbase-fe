@@ -8,12 +8,7 @@
 <div class="content">
   <div class="titlebox">
     <div class="title">
-    <!-- //SOCIAL MEDIA -->
-        <div >
-        <a href="https://twitter.com/intent/tweet?url={{url()->current()}}" target="_blank"><i class="fa fa-twitter">twitter</i></a>
-        <a href="https://www.facebook.com/sharer/sharer.php?u={{url()->current()}}"  target="_blank"><i class="fa fa-facebook">facebook</i></a>
-        </div>
-    <!-- //SOCIAL MEDIA -->
+
     </div>
   </div>
   <div class="profile_box">
@@ -30,7 +25,13 @@
       </div>
     </div>
     <p>{{$data->video->description}}</p>
-    
+
   </div>
+  <!-- //SOCIAL MEDIA -->
+      <div class="sosmed">
+      <a href="https://twitter.com/intent/tweet?url={{url()->current()}}" target="_blank"><i class="fa fa-twitter">twitter</i></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{url()->current()}}"  target="_blank"><i class="fa fa-facebook">facebook</i></a>
+      </div>
+  <!-- //SOCIAL MEDIA -->
 </div>
 @endsection
