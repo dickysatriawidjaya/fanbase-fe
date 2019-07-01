@@ -117,7 +117,7 @@
           </div>
         </div> -->
         <div class="copyright">
-        {{$data->web_footer}}
+        {!!$data->web_footer!!}
         </div>
       </div>
     </footer>

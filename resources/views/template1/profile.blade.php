@@ -22,7 +22,7 @@
 				</div>
 				<div class="col-lg-6">
 					<div class="ab-content">
-						{{$data->web_profile}}
+						{!!$data->web_profile!!}
 					</div>
 				</div>
 			</div>

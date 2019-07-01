@@ -12,7 +12,7 @@
     </div>
   </div>
   <div class="profile_box">
-  {{$data->web_profile}}
+  {!!$data->web_profile!!}
   </div>
 </div>
 @endsection
