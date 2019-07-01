@@ -14,8 +14,8 @@
       $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'get_data')
-                  ->withHeader('api_key:'.$api_key)
-                  ->withHeader('secret_key:'.$secret_key)
+                  ->withHeader('api-key:'.$api_key)
+                  ->withHeader('secret-key:'.$secret_key)
                   ->asJson()
                   ->post();
       $data =  $response->message;
@@ -29,8 +29,8 @@
       $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'content')
-                  ->withHeader('api_key:'.$api_key)
-                  ->withHeader('secret_key:'.$secret_key)
+                  ->withHeader('api-key:'.$api_key)
+                  ->withHeader('secret-key:'.$secret_key)
                   ->withData(array('content'=>"News"))
                   ->asJson()
                   ->post();
@@ -47,8 +47,8 @@
       $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'content')
-                  ->withHeader('api_key:'.$api_key)
-                  ->withHeader('secret_key:'.$secret_key)
+                  ->withHeader('api-key:'.$api_key)
+                  ->withHeader('secret-key:'.$secret_key)
                   ->withData(array('content'=>"News",'detail_id'=>$id))
                   ->asJson()
                   ->post();
@@ -65,8 +65,8 @@
       $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'content')
-                  ->withHeader('api_key:'.$api_key)
-                  ->withHeader('secret_key:'.$secret_key)
+                  ->withHeader('api-key:'.$api_key)
+                  ->withHeader('secret-key:'.$secret_key)
                   ->withData(array('content'=>"Live"))
                   ->asJson()
                   ->post();
@@ -82,8 +82,8 @@
       $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'content')
-                  ->withHeader('api_key:'.$api_key)
-                  ->withHeader('secret_key:'.$secret_key)
+                  ->withHeader('api-key:'.$api_key)
+                  ->withHeader('secret-key:'.$secret_key)
                   ->withData(array('content'=>"Live",'detail_id'=>$id))
                   ->asJson()
                   ->post();
@@ -99,8 +99,8 @@
       $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'content')
-                  ->withHeader('api_key:'.$api_key)
-                  ->withHeader('secret_key:'.$secret_key)
+                  ->withHeader('api-key:'.$api_key)
+                  ->withHeader('secret-key:'.$secret_key)
                   ->withData(array('content'=>"Media"))
                   ->asJson()
                   ->post();
@@ -116,8 +116,8 @@
       $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'content')
-                  ->withHeader('api_key:'.$api_key)
-                  ->withHeader('secret_key:'.$secret_key)
+                  ->withHeader('api-key:'.$api_key)
+                  ->withHeader('secret-key:'.$secret_key)
                   ->withData(array('content'=>"Media",'detail_id'=>$id))
                   ->asJson()
                   ->post();
@@ -133,8 +133,8 @@
       $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'get_data')
-                  ->withHeader('api_key:'.$api_key)
-                  ->withHeader('secret_key:'.$secret_key)
+                  ->withHeader('api-key:'.$api_key)
+                  ->withHeader('secret-key:'.$secret_key)
                   ->withData(array('menu'=>"music"))
                   ->asJson()
                   ->post();
@@ -150,8 +150,8 @@
       $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'get_foto_detail/'.$id)
-                  ->withHeader('api_key:'.$api_key)
-                  ->withHeader('secret_key:'.$secret_key)
+                  ->withHeader('api-key:'.$api_key)
+                  ->withHeader('secret-key:'.$secret_key)
                   ->asJson()
                   ->post();
       $data =  $response->message;
@@ -166,8 +166,8 @@
       $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'get_data')
-                  ->withHeader('api_key:'.$api_key)
-                  ->withHeader('secret_key:'.$secret_key)
+                  ->withHeader('api-key:'.$api_key)
+                  ->withHeader('secret-key:'.$secret_key)
                   ->withData(array('menu'=>"video"))
                   ->asJson()
                   ->post();
@@ -183,8 +183,8 @@
       $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'get_video_detail/'.$id)
-                  ->withHeader('api_key:'.$api_key)
-                  ->withHeader('secret_key:'.$secret_key)
+                  ->withHeader('api-key:'.$api_key)
+                  ->withHeader('secret-key:'.$secret_key)
                   ->asJson()
                   ->post();
       $data =  $response->message;
@@ -199,8 +199,8 @@
       $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'get_data')
-                  ->withHeader('api_key:'.$api_key)
-                  ->withHeader('secret_key:'.$secret_key)
+                  ->withHeader('api-key:'.$api_key)
+                  ->withHeader('secret-key:'.$secret_key)
                   ->withData(array('menu'=>"profile"))
                   ->asJson()
                   ->post();
@@ -217,8 +217,8 @@
       $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'get_data')
-                  ->withHeader('api_key:'.$api_key)
-                  ->withHeader('secret_key:'.$secret_key)
+                  ->withHeader('api-key:'.$api_key)
+                  ->withHeader('secret-key:'.$secret_key)
                   ->asJson()
                   ->post();
       $data =  $response->message;
@@ -232,8 +232,8 @@
       $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'get_data')
-                  ->withHeader('api_key:'.$api_key)
-                  ->withHeader('secret_key:'.$secret_key)
+                  ->withHeader('api-key:'.$api_key)
+                  ->withHeader('secret-key:'.$secret_key)
                   ->asJson()
                   ->post();
       $data =  $response->message;
@@ -248,8 +248,8 @@
       $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'get_data')
-                  ->withHeader('api_key:'.$api_key)
-                  ->withHeader('secret_key:'.$secret_key)
+                  ->withHeader('api-key:'.$api_key)
+                  ->withHeader('secret-key:'.$secret_key)
                   ->asJson()
                   ->post();
       $data =  $response->message;
