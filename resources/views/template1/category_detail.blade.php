@@ -24,7 +24,7 @@
 				<div class="col-lg-6">
 					<div class="ab-content">
 						<!-- <h4>Kangen Band is back</h4> -->
-						<p>{{$data->content->content}}</p>
+						<p>{!!$data->content->content!!}</p>
 					</div>
 				</div>
 			</div>

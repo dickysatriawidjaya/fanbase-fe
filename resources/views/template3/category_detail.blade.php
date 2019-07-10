@@ -56,7 +56,7 @@
                             <div class="section_wrapper">
                                 <div class="the_content_wrapper">
                                   <h1>{{$data->content->title}}</h1>
-                                  <p>{{$data->content->content}}</p>
+                                  <p>{!!$data->content->content!!}</p>
                                 </div>
                             </div>
                         </div>
