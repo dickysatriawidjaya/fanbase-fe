@@ -24,7 +24,7 @@
         <p>{{ date("d M Y", strtotime($data->content->created_at)) }}</p>
       </div>
     </div>
-    <p>{{$data->content->content}}</p>
+    <p>{!!$data->content->content!!}</p>
 
   </div>
   <!-- //SOCIAL MEDIA -->

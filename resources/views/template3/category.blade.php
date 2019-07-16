@@ -3,7 +3,7 @@
 <div id="Subheader">
     <div class="container">
         <div class="column one">
-            <h1 class="title">NEWS</h1>
+            <h1 class="title">{{strtoupper($data->content[0]->category->category_name)}}</h1>
         </div>
     </div>
 </div>
@@ -40,12 +40,9 @@
 
                                             <div class="image_frame post-photo-wrapper scale-with-grid">
                                                 <div class="image_wrapper">
-                                                    <a href="/newsdetail/{{$c->id}}?title={{$c->title}}">
+                                                    <a href="/{{strtolower($c->category->category_name)}}/{{$c->id}}?title={{ $c->title }}">
                                                         <div class="mask"></div><img width="576" height="450" src="{{ asset('asset3/images/img/2.jpg') }}" class="scale-with-grid wp-post-image" alt="home_animals_photo3" />
                                                     </a>
-                                                    <!-- <div class="image_links double">
-                                                        <a href="{{ asset('asset3/images/img/2.jpg') }}" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a href="/template3/detail/detail1" class="link"><i class="icon-link"></i></a>
-                                                    </div> -->
                                                 </div>
                                             </div>
                                             <div class="post-desc-wrapper">
@@ -62,7 +59,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="post-title">
-                                                        <h2 class="entry-title"><a href="/newsdetail/{{$c->id}}">{{ $c->title }}</a></h2>
+                                                        <h2 class="entry-title"><a href="/{{strtolower($c->category->category_name)}}/{{$c->id}}?title={{ $c->title }}">{{ $c->title }}</a></h2>
                                                     </div>
                                                     <div class="post-excerpt">
                                                         <p class="big">

@@ -40,18 +40,16 @@
 			<div class="nav-switch">
 				<i class="fa fa-bars"></i>
 			</div>
+			
 			<!-- Main Menu -->
 			<ul class="main-menu">
 				<li class=""><a href="/">Home</a></li>
-				<li><a href="/news">News</a></li>
-				<li><a href="/live">Live</a></li>
-				<li><a href="/media">Media</a></li>
+			@foreach($data->menu as $menu)
+				<li><a href="/{{strtolower($menu->category->category_name)}}">{{ $menu->category->category_name}}</a></li>
+			@endforeach
 				<li><a href="/music">Music</a></li>
 				<li><a href="/movie">Movie</a></li>
-				<!-- <li><a href="/store">Store</a></li>
-				<li><a href="/lovers">Lovers</a></li> -->
 				<li><a href="/profile">Profile</a></li>
-				<!-- <li><a href="/link">Link</a></li> -->
 			</ul>
 			<!-- Social Links -->
 			<!-- <div class="header-social-links">
@@ -100,22 +98,11 @@
 	});
 	document.addEventListener('contextmenu', event => event.preventDefault());
 
-	$( ".live_detail" ).click(function() {
+	$( ".detail" ).click(function() {
 		var id = $(this).attr('data-id');
 		var title = $(this).attr('data-title');
-		window.location.href = "/livedetail/"+id+"?title="+title;
-	});
-
-	$( ".foto_detail" ).click(function() {
-		var id = $(this).attr('data-id');
-		var title = $(this).attr('data-title');
-		window.location.href = "/musicdetail/"+id+"?title="+title;
-	});
-
-	$( ".video_detail" ).click(function() {
-		var id = $(this).attr('data-id');
-		var title = $(this).attr('data-title');
-		window.location.href = "/moviedetail/"+id+"?title="+title;
+		var category = $(this).attr('data-category');
+		window.location.href = "/"+category+"/"+id+"?title="+title;
 	});
 
 	if($("body").attr("data-font")){

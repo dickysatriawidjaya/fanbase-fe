@@ -60,16 +60,13 @@
                       <li class="current_page_item">
                           <a href="/"><span>HOME</span></a>
                       </li>
-                      <li>
-                          <a href="/news"><span>NEWS</span></a>
+                      @foreach($data->menu as $menu)
+                        <li>
+                          <a href="/{{strtolower($menu->category->category_name)}}"><span>{{ $menu->category->category_name }}</span></a>
                       </li>
-                      <li>
-                          <a href="/live"><span>LIVE</span></a>
-                      </li>
-                      <li i>
-                          <a href="/media"><span>MEDIA</span></a>
-                      </li>
-											<li i>
+                    @endforeach
+                      
+						<li i>
                           <a href="/music"><span>MUSIC</span></a>
                       </li>
 											<li i>
@@ -132,22 +129,6 @@
                           <div class="copyright">
                           {!!$data->web_footer!!}
                           </div>
-                          <!-- <nav id="social-menu">
-                              <ul id="menu-main-menu-1" class="social-menu">
-                                  <li>
-                                      <a href="index-animals.html">HOME</a>
-                                  </li>
-                                  <li class="menu-item-2306">
-                                      <a href="content/animals/articles-page-1.html">ARTICLES</a>
-                                  </li>
-                                  <li class="menu-item-2307">
-                                      <a href="content/animals/your-pupils.html">YOUR PUPILS</a>
-                                  </li>
-                                  <li class="menu-item-2305">
-                                      <a href="content/animals/who-we-are.html">WHO WE ARE</a>
-                                  </li>
-                              </ul>
-                          </nav> -->
                       </div>
                   </div>
               </div>
@@ -249,6 +230,8 @@
         </script>
 
         <script>
+        	document.addEventListener('contextmenu', event => event.preventDefault());
+
             jQuery(window).load(function() {
                 var retina = window.devicePixelRatio > 1 ? true : false;
                 if (retina) {

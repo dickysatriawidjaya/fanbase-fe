@@ -59,15 +59,12 @@
                     <li class="">
                       <a href=" /"><i class="fa fa-home"></i> <span>Home</span></a>
                     </li>
+                    @foreach($data->menu as $menu)
                     <li>
-                      <a href="/news"><i class="fa fa-newspaper-o"></i> <span>News</span></a>
+                      <a href="/{{strtolower($menu->category->category_name)}}"><i class="fa fa-music"></i> <span>{{ $menu->category->category_name }}</span></a>
                     </li>
-                    <li>
-                      <a href="/live"><i class="fa fa-rss"></i> <span>Live</span></a>
-                    </li>
-                    <li>
-                      <a href="/media"><i class="fa fa-photo"></i> <span>Media</span></a>
-                    </li>
+                    @endforeach
+
                     <li>
                       <a href="/music"><i class="fa fa-music"></i> <span>Music</span></a>
                     </li>
@@ -130,6 +127,8 @@
           // alert(font)
           $('body').css("font-family", font, "!important");
       }
+      document.addEventListener('contextmenu', event => event.preventDefault());
+
     </script>
 </body>
 
