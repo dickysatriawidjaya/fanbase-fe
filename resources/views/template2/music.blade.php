@@ -11,7 +11,7 @@
     <div class="music_box">
       <img class="hero_image" src="{{ env('API_PREFIX').$c->physical_path }}"/>
       <div class="category">
-        <p>Music</p>
+        <p>{{$c->title}}</p>
       </div>
       <a class="music_title"  href="/musicdetail/{{$c->id}}?title={{$c->title}}">{{$c->title}}</a>
     </div>

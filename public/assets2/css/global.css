@@ -46,6 +46,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 body {
 	line-height: 1;
+	position: absolute;
 }
 ol, ul {
 	list-style: none;

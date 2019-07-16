@@ -58,3 +58,6 @@ Route::get('/template3/link','Template3Controller@link');
 Route::get('/template3/detail/detail1','Template3Controller@detail1');
 Route::get('/template3/detail/detail2','Template3Controller@detail2');
 Route::get('/template3/detail/detail3','Template3Controller@detail3');
+
+// Template 4
+Route::get('template4/','Template4Controller@index');

@@ -57,7 +57,7 @@
                 <nav id="menu">
                   <ul id="menu-menu" class="menu menu-main">
                     <li class="">
-                      <a href="/"><i class="fa fa-home"></i> <span>Home</span></a>
+                      <a href=" /"><i class="fa fa-home"></i> <span>Home</span></a>
                     </li>
                     <li>
                       <a href="/news"><i class="fa fa-newspaper-o"></i> <span>News</span></a>
@@ -91,6 +91,9 @@
                     </li> -->
                   </ul>
                 </nav><a class="responsive-menu-toggle" href="#"><i class="fa fa-align-justify"></i></a>
+                <div class="copyright" style="text-align:center; color:white; margin-top:20%; font-size:14px; font-weight:300;">
+                {!!$data->web_footer!!}
+                </div>
               </div>
             </div>
           </div>
@@ -99,29 +102,8 @@
     </div>
     <div id="Wrapper">
     @yield('content')
-    <footer id="Footer" class="clearfix" >
-      <div class="footer_copy">
-        <div class="footer">
 
-          <!-- <div class="footerbox">
-            <a href="#">Terms of Use </a>
-          </div>
-          <div class="footerbox">
-            <a href="#">Privacy Policy</a>
-          </div>
-          <div class="footerbox">
-            <a href="#">Contact Us</a>
-          </div>
-          <div class="footerbox">
-            <a href="#">Display based on Specified</a>
-          </div>
-        </div> -->
-        <div class="copyright">
-        {!!$data->web_footer!!}
-        </div>
-      </div>
-    </footer>
-</div>
+    </div>
     <div id="Side_slide" class="right dark" data-width="250">
         <div class="close-wrapper">
             <a href="#" class="close"><i class="fa fa-angle-double-left"></i></a>

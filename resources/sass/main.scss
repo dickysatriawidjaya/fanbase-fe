@@ -1,0 +1,63 @@
+@import 'new/libs/vars';
+@import 'new/libs/functions';
+@import 'new/libs/mixins';
+@import 'new/libs/vendor';
+@import 'new/libs/breakpoints';
+@import 'new/libs/html-grid';
+@import 'new/fontawesome-all.min.css';
+@import 'new/efek';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700');
+
+/*
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+// Breakpoints.
+
+	@include breakpoints((
+		xlarge:   ( 1281px,  1680px ),
+		large:    ( 981px,   1280px ),
+		medium:   ( 737px,   980px  ),
+		small:    ( 481px,   736px  ),
+		xsmall:   ( 361px,   480px  ),
+		xxsmall:  ( null,    360px  ),
+		xlarge-to-max:    '(min-width: 1681px)',
+		small-to-xlarge:  '(min-width: 481px) and (max-width: 1680px)'
+	));
+
+// Base.
+
+	@import 'new/base/reset';
+	@import 'new/base/page';
+	@import 'new/base/typography';
+
+// Component.
+
+	@import 'new/components/row';
+	@import 'new/components/section';
+	@import 'new/components/form';
+	@import 'new/components/box';
+	@import 'new/components/icon';
+	@import 'new/components/image';
+	@import 'new/components/list';
+	@import 'new/components/actions';
+	@import 'new/components/icons';
+	@import 'new/components/contact';
+	@import 'new/components/pagination';
+	@import 'new/components/table';
+	@import 'new/components/button';
+	@import 'new/components/mini-posts';
+	@import 'new/components/features';
+	@import 'new/components/posts';
+
+// Layout.
+
+	@import 'new/layout/wrapper';
+	@import 'new/layout/main';
+	@import 'new/layout/sidebar';
+	@import 'new/layout/header';
+	@import 'new/layout/banner';
+	@import 'new/layout/footer';
+	@import 'new/layout/menu';

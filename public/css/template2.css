@@ -19,10 +19,18 @@
   color: #ff3680;
 }
 
+#Header_creative #Top_bar .menu > li > a i {
+  display: none;
+}
+
 #Header_creative #Top_bar .top_bar_left {
   width: 100% !important;
   float: none;
   background: black;
+}
+
+#menu-menu li a i {
+  display: none;
 }
 
 .row,
@@ -49,6 +57,7 @@
 .content {
   background: white;
   padding: 2%;
+  min-height: 503px;
 }
 
 .content .box {
@@ -480,6 +489,14 @@
   line-height: 22px;
   font-weight: 300;
   color: black;
+  float: none;
+  color: white;
+  padding: 10px 10px;
+  background: black;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
 }
 
 #Footer,

@@ -16,7 +16,7 @@
       <div class="category">
         <p>Movie</p>
       </div>
-      <a class="music_title" href="/moviedetail/{{$c->id}}?title={{$c->title}}">{{$c->title}}</a>
+      <a class="music_title" href="#">{{$c->title}}</a>
     </div>
     @endforeach
     <!-- END Movie LISTS -->

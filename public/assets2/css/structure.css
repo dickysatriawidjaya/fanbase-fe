@@ -3596,7 +3596,7 @@ body:not(.with_aside) .portfolio_group.list .portfolio-item .portfolio-item-fw-w
 	display: none;
 }
 #Footer .footer_copy {
-	border-top: 1px solid rgba(255, 255, 255, .1);
+	border-top: 0px solid rgba(255, 255, 255, .1);
 }
 #Footer .footer_copy .one {
 	margin-bottom: 20px;

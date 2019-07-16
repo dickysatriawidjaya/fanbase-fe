@@ -13,10 +13,20 @@
 #Header_creative #Top_bar .menu>li>a span:hover {
     color: #ff3680;
 }
+#Header_creative #Top_bar .menu>li>a{
+  i{
+    display: none;
+  }
+}
 #Header_creative #Top_bar .top_bar_left {
     width: 100% !important;
     float: none;
     background: black;
+}
+#menu-menu li a{
+  i{
+    display: none;
+  }
 }
 .row, .clearfix {
     zoom: 1;
@@ -44,6 +54,7 @@
   @extend %clearfix;
   background: white;
   padding: 2%;
+  min-height: 503px;
   //HOME
   .box{
     @extend %clearfix;
@@ -368,6 +379,14 @@
     }
     .copyright{
       @include font(14px,22px,300,black);
+      float: none;
+      color: white;
+      padding: 10px 10px;
+      background: black;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      bottom: 0;
     }
   }
 }

@@ -472,7 +472,7 @@
 	#Header_creative #Top_bar .logo {
 		float: none;
 		text-align: center;
-		margin: 15px 0
+		margin: -5px 0;
 	}
 	#Header_creative #Top_bar #menu {
 		background-color: transparent
@@ -2080,6 +2080,7 @@ h6 {
     padding: 1.5%;
     float: left;
     margin-bottom: 0%;
+    min-height: 474px;
 	}
 	.content .music_box a.music_title {
     font-size: 1rem;

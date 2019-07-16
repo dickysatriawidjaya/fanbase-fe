@@ -51,14 +51,14 @@
               <div class="top_bar_left clearfix">
                 <!-- Logo-->
                 <div class="logo">
-                  <h1><a id="logo" href="/" title="Noah"><img class="logo-main scale-with-grid" src="{{ env('API_PREFIX').$data->web_logo }}"  alt="BeAnimals - BeTheme" /> </a></h1>
+                  <h1><a id="logo" href="/" title="Noah"><img class="logo-main scale-with-grid" src="{{ env('API_PREFIX').$data->web_logo }}"  alt="Fanbase" /> </a></h1>
                 </div>
                 <!-- Main menu-->
                 <div class="menu_wrapper">
                   <nav id="menu">
                     <ul id="menu-main-menu" class="menu">
                       <li class="current_page_item">
-                          <a href=""><span>HOME</span></a>
+                          <a href="/"><span>HOME</span></a>
                       </li>
                       <li>
                           <a href="/news"><span>NEWS</span></a>
@@ -74,6 +74,9 @@
                       </li>
 											<li i>
                           <a href="/movie"><span>MOVIE</span></a>
+                      </li>
+                      <li i>
+                          <a href="/profile"><span>PROFILE</span></a>
                       </li>
 											<!-- <li i>
                           <a href="/template3/stor"><span>STORE</span></a>
