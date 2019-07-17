@@ -25,14 +25,10 @@
 								<header id="header">
 									<a href="/" class="logo"><strong>{{$data->web_title}}</strong></a>
 									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+										<li><a href="https://twitter.com/intent/tweet?url={{url()->current()}}" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="https://www.facebook.com/sharer/sharer.php?u={{url()->current()}}" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 									</ul>
 								</header>
-
 							@yield('content')
 
 						</div>
@@ -42,12 +38,7 @@
 					<div id="sidebar">
 						<div class="inner">
 
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
+							
 
 							<!-- Menu -->
 								<nav id="menu">
@@ -56,13 +47,12 @@
 									</header>
 									<ul>
 										<li class=""><a href="/">Home</a></li>
-										<li><a href="/news">News</a></li>
-										<li><a href="/live">Live</a></li>
-										<li><a href="/media">Media</a></li>
+										@foreach($data->menu as $menu)
+											<li><a href="/{{strtolower($menu->category->category_name)}}">{{ $menu->category->category_name}}</a></li>
+										@endforeach
 										<li><a href="/music">Music</a></li>
 										<li><a href="/movie">Movie</a></li>
 										<li><a href="/profile">Profile</a></li>
-
 									</ul>
 								</nav>
 
@@ -98,5 +88,9 @@
 			<script src="{{ asset('assets4/js/util.js') }}"></script>
 			<script src="{{ asset('assets4/js/main.js') }}"></script>
 			<script src="{{ asset('assets2/js/scripts.js') }}"></script>
+
+			<!-- //DISABLE KLIK KANAN -->
+			<script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
+			
 	</body>
 </html>
