@@ -1,5 +1,6 @@
 @extends('template2/menu/menu')
 @section('content')
+
   <div class="head">
     <div class="hero">
       <img class="hero_image" src="{{ env('API_PREFIX').$data->web_main_banner }}"/>

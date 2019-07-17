@@ -101,6 +101,8 @@
     @yield('content')
 
     </div>
+
+</div>
     <div id="Side_slide" class="right dark" data-width="250">
         <div class="close-wrapper">
             <a href="#" class="close"><i class="fa fa-angle-double-left"></i></a>

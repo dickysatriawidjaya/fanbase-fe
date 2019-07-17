@@ -22,10 +22,9 @@ Route::get('/profile','HomeController@profile');
 Route::get('/link','HomeController@link');
 
 Route::get('{slug}/{id}', [
-    'uses' => 'HomeController@category_content_detail' 
+    'uses' => 'HomeController@category_content_detail'
 ])->where('slug', '([A-Za-z0-9\-\/]+)');
 
-<<<<<<< HEAD
 //template2
 Route::get('/template2','Template2Controller@index');
 Route::get('/template2/news','Template2Controller@news');
@@ -58,8 +57,7 @@ Route::get('/template3/detail/detail3','Template3Controller@detail3');
 
 // Template 4
 Route::get('template4/','Template4Controller@index');
-=======
+
 Route::get('{slug}', [
-    'uses' => 'HomeController@category_content' 
+    'uses' => 'HomeController@category_content'
 ])->where('slug', '([A-Za-z0-9\-\/]+)');
->>>>>>> 99df31eb9707fc01d1bb26cdc3767ba10e2afc6b
