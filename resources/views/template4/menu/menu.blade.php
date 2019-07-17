@@ -58,7 +58,7 @@
 
 
 							<!-- Section -->
-								<section>
+								<!-- <section>
 									<header class="major">
 										<h2>Get in touch</h2>
 									</header>
@@ -69,7 +69,7 @@
 										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
 										Nashville, TN 00000-0000</li>
 									</ul>
-								</section>
+								</section> -->
 
 							<!-- Footer -->
 								<footer id="footer">
