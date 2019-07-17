@@ -12,7 +12,7 @@
 
     <h2>{{$data->content->title}}</h2>
     <p>{{ date("d M Y", strtotime($data->content->created_at)) }}</p>
-    <p>{{$data->content->content}}</p>
+    <p>{!!$data->content->content!!}</p>
 
     <hr class="major" />
 
