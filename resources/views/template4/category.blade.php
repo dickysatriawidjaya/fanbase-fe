@@ -3,7 +3,7 @@
 <!-- Content -->
   <section>
     <header class="main">
-      <h1>News</h1>
+      <h1>{{strtoupper($data->content[0]->category->category_name)}}</h1>
     </header>
 
     <span class="image main"><img class="scale-in-center" src="{{ env('API_PREFIX').$data->web_main_banner }}" alt="" /></span>
@@ -12,7 +12,7 @@
     <div class="posts">
       <article>
         @foreach($data->content as $c)
-        <h2><a class="news_title " href="/newsdetail/{{$c->id}}">{{ $c->title }}</a></h2>
+        <h2><a class="news_title " href="/{{strtolower($c->category->category_name)}}/{{$c->id}}?title={{ $c->title }}">{{ $c->title }}</a></h2>
         <p class="kategori">{{$c->tag}}</p>
         <p>{{ date("d M Y", strtotime($c->created_at)) }}</p>
         <hr class="major" />
