@@ -19,6 +19,7 @@
                   ->asJson()
                   ->post();
       $data =  $response->message;
+      // dd($data);
       return View::make('template'.$template_id.'/home')->with('data',$data)->render();
     }
 
