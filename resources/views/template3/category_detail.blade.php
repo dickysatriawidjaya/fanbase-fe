@@ -62,9 +62,9 @@
                         </div>
                     </div>
                     <div class="sosmed">
-                        <a href="https://www.facebook.com/sharer/sharer.php?u={{url()->current()}}"  target="_blank"><i class="fa fa-facebook" aria-hidden="true"> </i></a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{url()->current()}}"  target="_blank"><i class="fa fa-facebook" aria-hidden="true"> </i></a>
                     
-                        <a href="https://twitter.com/intent/tweet?url={{url()->current()}}" target="_blank"><i class="fa fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/intent/tweet?url={{url()->current()}}" target="_blank"><i class="fa fa fa-twitter" aria-hidden="true"></i></a>
                     </div>
                     <!--Author Info Area-->
 
