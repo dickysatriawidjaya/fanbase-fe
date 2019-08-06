@@ -11,7 +11,7 @@
       $config = Config::get("global");
       $api_key = $config['web_data']['api_key'];
       $secret_key = $config['web_data']['secret_key'];
-      $template_id = $config['web_data']['template'];
+      
       $url =  env("API_URL");
       $response = Curl::to($url.'get_data')
                   ->withHeader('api-key:'.$api_key)
@@ -19,7 +19,8 @@
                   ->asJson()
                   ->post();
       $data =  $response->message;
-      // dd($data);
+      $template_id = $data->template_code;
+      // dd($template_id);
       return View::make('template'.$template_id.'/home')->with('data',$data)->render();
     }
 
@@ -27,7 +28,6 @@
       $config = Config::get("global");
       $api_key = $config['web_data']['api_key'];
       $secret_key = $config['web_data']['secret_key'];
-      $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'content')
                   ->withHeader('api-key:'.$api_key)
@@ -35,8 +35,8 @@
                   ->withData(array('content'=>$slug))
                   ->asJson()
                   ->post();
-
       $data =  $response->message;
+      $template_id = $data->template_code;
       return View::make('template'.$template_id.'/category')->with('data',$data)->render();
     }
 
@@ -44,7 +44,6 @@
       $config = Config::get("global");
       $api_key = $config['web_data']['api_key'];
       $secret_key = $config['web_data']['secret_key'];
-      $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'content')
                   ->withHeader('api-key:'.$api_key)
@@ -53,6 +52,7 @@
                   ->asJson()
                   ->post();
       $data =  $response->message;
+      $template_id = $data->template_code;
       return View::make('template'.$template_id.'/category_detail')->with('data',$data)->render();
 
     }
@@ -61,7 +61,6 @@
       $config = Config::get("global");
       $api_key = $config['web_data']['api_key'];
       $secret_key = $config['web_data']['secret_key'];
-      $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'get_data')
                   ->withHeader('api-key:'.$api_key)
@@ -70,6 +69,7 @@
                   ->asJson()
                   ->post();
       $data =  $response->message;
+      $template_id = $data->template_code;
       // return dd($data);
       return View::make('template'.$template_id.'/music')->with('data',$data)->render();
     }
@@ -78,7 +78,6 @@
       $config = Config::get("global");
       $api_key = $config['web_data']['api_key'];
       $secret_key = $config['web_data']['secret_key'];
-      $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'get_foto_detail/'.$id)
                   ->withHeader('api-key:'.$api_key)
@@ -86,6 +85,7 @@
                   ->asJson()
                   ->post();
       $data =  $response->message;
+      $template_id = $data->template_code;
       // return dd($data);
       return View::make('template'.$template_id.'/musicdetail')->with('data',$data)->render();
     }
@@ -94,7 +94,6 @@
       $config = Config::get("global");
       $api_key = $config['web_data']['api_key'];
       $secret_key = $config['web_data']['secret_key'];
-      $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'get_data')
                   ->withHeader('api-key:'.$api_key)
@@ -103,6 +102,7 @@
                   ->asJson()
                   ->post();
       $data =  $response->message;
+      $template_id = $data->template_code;
       // return dd($data);
       return View::make('template'.$template_id.'/movie')->with('data',$data)->render();
     }
@@ -111,7 +111,6 @@
       $config = Config::get("global");
       $api_key = $config['web_data']['api_key'];
       $secret_key = $config['web_data']['secret_key'];
-      $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'get_video_detail/'.$id)
                   ->withHeader('api-key:'.$api_key)
@@ -119,6 +118,7 @@
                   ->asJson()
                   ->post();
       $data =  $response->message;
+      $template_id = $data->template_code;
       // return dd($data);
       return View::make('template'.$template_id.'/moviedetail')->with('data',$data)->render();
     }
@@ -127,7 +127,6 @@
       $config = Config::get("global");
       $api_key = $config['web_data']['api_key'];
       $secret_key = $config['web_data']['secret_key'];
-      $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'get_data')
                   ->withHeader('api-key:'.$api_key)
@@ -136,6 +135,7 @@
                   ->asJson()
                   ->post();
       $data =  $response->message;
+      $template_id = $data->template_code;
       // return dd($data);
       return View::make('template'.$template_id.'/profile')->with('data',$data)->render();
     }
@@ -145,7 +145,6 @@
       $config = Config::get("global");
       $api_key = $config['web_data']['api_key'];
       $secret_key = $config['web_data']['secret_key'];
-      $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'get_data')
                   ->withHeader('api-key:'.$api_key)
@@ -153,6 +152,7 @@
                   ->asJson()
                   ->post();
       $data =  $response->message;
+      $template_id = $data->template_code;
       return View::make('template'.$template_id.'/store')->with('data',$data)->render();
     }
     public function lovers()
@@ -160,7 +160,6 @@
       $config = Config::get("global");
       $api_key = $config['web_data']['api_key'];
       $secret_key = $config['web_data']['secret_key'];
-      $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'get_data')
                   ->withHeader('api-key:'.$api_key)
@@ -168,7 +167,7 @@
                   ->asJson()
                   ->post();
       $data =  $response->message;
-
+      $template_id = $data->template_code;
       return View::make('template'.$template_id.'/lovers')->with('data',$data)->render();
     }
     public function link()
@@ -176,7 +175,6 @@
       $config = Config::get("global");
       $api_key = $config['web_data']['api_key'];
       $secret_key = $config['web_data']['secret_key'];
-      $template_id = $config['web_data']['template'];
       $url =  env("API_URL");
       $response = Curl::to($url.'get_data')
                   ->withHeader('api-key:'.$api_key)
@@ -184,6 +182,7 @@
                   ->asJson()
                   ->post();
       $data =  $response->message;
+      $template_id = $data->template_code;
       return View::make('template'.$template_id.'/link')->with('data',$data)->render();
     }
   }
